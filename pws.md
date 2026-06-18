@@ -14,7 +14,11 @@
 
 ## Methodology
 ### Question 1
--   
+
+## Layout
+### Question 1
+-   Introduce the subject. Include pictures of a piano octave with keys selected, and their accompanying isolated partial note sound waves. Then accompany those visuals with the raw sound using [sound in latex tool]
+
 
 # foreword
 have you ever heard an instrumental that made you emotional? well, if you did, i'm willing to bet that it contained an i - iv chord progression.
