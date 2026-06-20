@@ -1,3 +1,12 @@
+# Vragen aan docenten
+-   Het mag in het Engels... toch?
+-   Ik wil competitie doen:
+    -   Hoe werkt dit?
+    -   Kan ik er meerdere doen?
+    -   Is er iemand die mij kan helpen met de juiste vinden en het invoeren?
+-   Wat voor "profiel" is mijn PWS? Gewoon E&M?
+
+
 # Research question
 **To what extent can Western society's perceived enjoyment of the I - V - IV - iv chord progression be shared?**
 
