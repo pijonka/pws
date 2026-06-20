@@ -18,6 +18,7 @@
 ## Layout
 ### Question 1
 -   Introduce the subject. Include pictures of a piano octave with keys selected, and their accompanying isolated partial note sound waves. Then accompany those visuals with the raw sound using [sound in latex tool]
+-   Use the previously established foundation to analyze the chord progression, using the same structure, but with the four triads. For each triad: piano octave with three selected notes, three partial sound waves in a graph, and raw sound.
 
 
 # foreword
