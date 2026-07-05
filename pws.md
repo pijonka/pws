@@ -9,7 +9,7 @@
 
 
 # Research question
-**To what extent can Western society's perceived enjoyment of the I - V - IV - iv chord progression be shared?**
+**To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences of American music?** 
 
 ## Sub-questions
 1.  What is the difference between the relation of perceptual consonance and dissonance throughout a I - V - IV - iv chord progression and the ideal relation of perceptual consonance and dissonance?
@@ -33,6 +33,8 @@
 -   Interval
 -   Perceived enjoyment
     -   Enjoyment comes from the expectation of dissonance, and the resolution of dissonance using consonance.
+-   American society        
+    
 
 # Methodology
 ## Question 1
@@ -72,13 +74,19 @@
 -   Establish the research questions (10 questions)
     -   Population check (1 question): Please list all the countries in which you have been a resident for more than 1 year.
     -   Golden questions (3 questions): Isolated audio fragments of the I - V - IV - iv chord progression. Expressed through pure sine waves, played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
-    -   Relativity questions (6 questions): isolated audio fragments of other chord progressions
-        -   [welke chord progressions?]
+    -   Relativity questions (6 questions): isolated audio fragments of other chord progressions. These control progressions were selected from frequently occuring four-chord progression in American music
+        -   
+        -   
+        -   
+        -   
+        -   
+        -   
         Played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
     -   
 
 ## Question 3
--   
+-   A list will be made of 
+    
 
 
 # foreword
@@ -86,3 +94,5 @@ have you ever heard an instrumental that made you emotional? well, if you did, i
 
 or, at least, that's what I've noticed about my own music taste.
 
+# Sources
+(https://www.researchgate.net/figure/Number-of-frequent-chord-progression-patterns-as-a-function-of-the-chord-progression_fig2_278677700)
