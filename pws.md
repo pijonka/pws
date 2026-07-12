@@ -12,7 +12,7 @@
 **To what extent can Western society's perceived enjoyment of the I - V - IV - iv chord progression be shared?**
 
 ## Sub-questions
-1.  What is the difference between the relation of perceptual consonance and dissonance throughout a I - V - IV - iv chord progression and the ideal relation of perceptual consonance and dissonance?
+1.  What is the difference between the average amount of dissonance throughout a I - V - IV - iv chord progression 
 2.  To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared upon initial, isolated observation?
 3.  What is the relation between the popularity of a song and the use of a I - V - IV - iv chord progression?
 
@@ -44,6 +44,7 @@
 
 # Layout
 ## Question 1
+TODO: reconsider methodology. Wundt curve kan sterk zijn, maar hoe wil je het vergelijken met de chord progression???
 -   Introduce the subject. 
     -   Define a well-established notion: an isolated consonant interval is relatively more enjoyable to listen to than an isolated dissonant interval 
     -   Include pictures of a piano octave with two keys (deriving from the triads to be analyzed) selected, and their accompanying isolated partial note sound waves. Then accompany those visuals with the raw sound using [sound in latex tool]. Express the total amount of dissonance in these intervals using Tenny Height. 
