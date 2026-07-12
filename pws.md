@@ -9,7 +9,7 @@
 
 
 # Research question
-**To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences of American music?** 
+**To what extent can Western society's perceived enjoyment of the I - V - IV - iv chord progression be shared?**
 
 ## Sub-questions
 1.  What is the difference between the relation of perceptual consonance and dissonance throughout a I - V - IV - iv chord progression and the ideal relation of perceptual consonance and dissonance?
@@ -33,8 +33,6 @@
 -   Interval
 -   Perceived enjoyment
     -   Enjoyment comes from the expectation of dissonance, and the resolution of dissonance using consonance.
--   American society        
-    
 
 # Methodology
 ## Question 1
@@ -80,8 +78,7 @@
     -   
 
 ## Question 3
--   A list will be made of the most popular
-    
+-   
 
 # discussion (current, not for final research paper)
 -   Why is the Wundt curve the "ideal relation of perceptual consonance and dissonance"?
