@@ -9,10 +9,10 @@
 
 
 # Research question
-**To what extent can Western society's perceived enjoyment of the I - V - IV - iv chord progression be shared?**
+**To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?** 
 
 ## Sub-questions
-1.  What is the difference between the average amount of dissonance throughout a I - V - IV - iv chord progression 
+1.  What is the difference between the average amount of dissonance throughout a I - V - IV - iv chord progression
 2.  To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared upon initial, isolated observation?
 3.  What is the relation between the popularity of a song and the use of a I - V - IV - iv chord progression?
 
@@ -33,6 +33,9 @@
 -   Interval
 -   Perceived enjoyment
     -   Enjoyment comes from the expectation of dissonance, and the resolution of dissonance using consonance.
+-   Audiences exposed to American music
+    -   Threshold of [x] percent of American artists in their national charts
+    (-   Every participant must be a resident of a country that reaches the threshold of a share of more than 10% of American artists in their national charts. This can be found [here](https://www.skoove.com/blog/spotify-local-vs-global-music/))
 
 # Methodology
 ## Question 1
@@ -60,7 +63,7 @@ TODO: reconsider methodology. Wundt curve kan sterk zijn, maar hoe wil je het ve
 ## Question 2
 -   Establish a population
     -   Acknowledge location bias
-    -   Western Society *can* be researched if the following is considered
+    -   [TODO NO LONGER WESTERN] Western Society *can* be researched if the following is considered
         -   The survey will be taken in a quiet classroom in school & online using SurveyCircle
         -   The survey will be made digitally [using what application?], but — in physical survey taking — a physical backup will be kept (with local audio fragments on a digital device)
         -   Every participant must be a resident of a country that reaches the threshold of a share of more than 10% of American artists in their national charts. This can be found [here](https://www.skoove.com/blog/spotify-local-vs-global-music/)
@@ -69,7 +72,7 @@ TODO: reconsider methodology. Wundt curve kan sterk zijn, maar hoe wil je het ve
     -   Population check (1 question): Please list all the countries in which you have been a resident for more than 1 year.
     -   Golden questions (3 questions): Isolated audio fragments of the I - V - IV - iv chord progression, repeated. Expressed through pure sine waves, played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
     -   Relativity questions (6 questions): isolated audio fragments of other chord progressions. These control progressions were selected from frequently occuring four-chord progression in American music
-        -   
+        -   I - V - IV - IV
         -   
         -   
         -   
@@ -79,7 +82,10 @@ TODO: reconsider methodology. Wundt curve kan sterk zijn, maar hoe wil je het ve
     -   
 
 ## Question 3
--   
+-   The McGill Billboard Corpus data, which contains the chord data of 1300 songs, will be used to obtain both "chord" and "popularity" data in the
+-   For the 21st century, chord data of (1300 * 0.27 = ) 351 songs will be extracted from hooktheory.com. Extracting this data forms the main challenge of the primary research of this subquestion
+    -   A list will 
+-   Hooktheory???!!!!!!!!!!!!!!! WITH API
 
 # discussion (current, not for final research paper)
 -   Why is the Wundt curve the "ideal relation of perceptual consonance and dissonance"?
