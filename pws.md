@@ -12,7 +12,7 @@
 **To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?** 
 
 ## Sub-questions
-1.  What is the difference between the average amount of dissonance throughout a I - V - IV - iv chord progression
+1.  What is the difference between the average amount of dissonance throughout a I - V - IV - iv chord progression, and the average amount of dissonance in the Wundt curve?
 2.  To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared upon initial, isolated observation?
 3.  What is the relation between the popularity of a song and the use of a I - V - IV - iv chord progression?
 
@@ -22,9 +22,6 @@
 3.  Proving/disproving using a database of songs ranked by popularity and the use of the I - V - IV - iv in those songs.
 
 # Theoretical framework
--   Tenny Height: [mathematical function]: the quantity measures the harmonic complexity of the interval
--   Harmonic ratio
--   Partial
 -   (perceived) Consonance
 -   (perceived) Dissonance
 -   Harmonic complexity: amount of dissonance
@@ -47,18 +44,17 @@
 
 # Layout
 ## Question 1
-TODO: reconsider methodology. Wundt curve kan sterk zijn, maar hoe wil je het vergelijken met de chord progression???
 -   Introduce the subject. 
-    -   Define a well-established notion: an isolated consonant interval is relatively more enjoyable to listen to than an isolated dissonant interval 
+    -   The Wundt curve: a supposedly "ideal" relation of consonance and dissonance in a song
     -   Include pictures of a piano octave with two keys (deriving from the triads to be analyzed) selected, and their accompanying isolated partial note sound waves. Then accompany those visuals with the raw sound using [sound in latex tool]. Express the total amount of dissonance in these intervals using Tenny Height. 
 -   Use the previously established foundation to analyze the chord progression, using the same structure, but with the four triads. For each triad: piano octave with three selected notes, three partial sound waves in a graph, and raw sound. Express the total amount of dissonance in these triads using Tenny Height.
--   Define a numerical table 
-    -   For every x = chord, x = a fourth
-    -   For each chord x, show the value y of dissonance
--   Compare the function of the chord progression that of the windt curve. 
-    -   Geometrically, this is done by simply graphing the wundt curve over the chord progression. 
-    -   Numerically, this is done by comparing the two values using MSE
--   The amount of difference between the two graphs is analyzed using max. vcp
+-   Define a "maximum amount of dissonance" in a triad, by measuring the total amount of dissonance in three adjacent semitones in Tenny Height
+-   Graph the function of the Wundt curve, but normalize it such that the minimum of the grpah is 0, and the maximum of the graph is the "maximum amount of dissonance"
+-   Gather the data into a table with columns "fraction of full chord progression's length in time" [ <-- awfully wordy and inconspicuous], "dissonance in chord progression", and "dissonance in Wundt curve"
+-   Compare the data of the table
+    -   Geometrically, this is done by placing dots of the chord progression's data over the Wundt curve
+    -   Numerically, this is done by comparing the two values using max. vcp
+-   This will yield [some kind of relative significant difference]
 
 ## Question 2
 -   Establish a population
