@@ -82,10 +82,13 @@ TODO: reconsider methodology. Wundt curve kan sterk zijn, maar hoe wil je het ve
     -   
 
 ## Question 3
--   The McGill Billboard Corpus data, which contains the chord data of 1300 songs, will be used to obtain both "chord" and "popularity" data in the
--   For the 21st century, chord data of (1300 * 0.27 = ) 351 songs will be extracted from hooktheory.com. Extracting this data forms the main challenge of the primary research of this subquestion
-    -   A list will 
--   Hooktheory???!!!!!!!!!!!!!!! WITH API
+-   For music from the 20th century The McGill Billboard Corpus dataset will be used to obtain both "chord" and "popularity" data for songs in the 20th century
+-   For music from the 21st century, an API given by Hooktheory.com can be used to obtain "chord" data, and a dataset of the Billboard Hot 100 [where the hell did I find this] will be used to obtain "popularity" data
+-   Both the aforementioned datasets will be used to the maximum possible extent, with as many entries as possible
+-   Once a "song", "popularity", and "use of progression" table can be defined, it will be viewed in these two ways:
+    -   2 dimensional dotplot, with the x axis being NUMBER OF USES OF CHORD PROGRESSION and the y axis being popularity
+    -   2 box plots [of trust intervals ?], one of average popularity of songs with the chord progression, compared to without
+-   The boxplots, specifically, can be compared [in what way? Refer to havo boeken] to define the significance between the two
 
 # discussion (current, not for final research paper)
 -   Why is the Wundt curve the "ideal relation of perceptual consonance and dissonance"?
