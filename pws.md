@@ -59,7 +59,7 @@
 ## Question 2
 -   Establish a population
     -   Acknowledge location bias
-    -   [TODO NO LONGER WESTERN] Western Society *can* be researched if the following is considered
+    -   
         -   The survey will be taken in a quiet classroom in school & online using SurveyCircle
         -   The survey will be made digitally [using what application?], but — in physical survey taking — a physical backup will be kept (with local audio fragments on a digital device)
         -   Every participant must be a resident of a country that reaches the threshold of a share of more than 10% of American artists in their national charts. This can be found [here](https://www.skoove.com/blog/spotify-local-vs-global-music/)
@@ -68,12 +68,15 @@
     -   Population check (1 question): Please list all the countries in which you have been a resident for more than 1 year.
     -   Golden questions (3 questions): Isolated audio fragments of the I - V - IV - iv chord progression, repeated. Expressed through pure sine waves, played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
     -   Relativity questions (6 questions): isolated audio fragments of other chord progressions. These control progressions were selected from frequently occuring four-chord progression in American music
-        -   I - V - IV - IV
-        -   
-        -   
-        -   
-        -   
-        -   
+        -   "good sounding chords", or very consonant 
+            -   I - V - IV - IV
+            -   
+            -   
+        -   "bad sounding chords", or very dissonant
+            -   
+            -   
+            -   
+            -   
         Played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
     -   
 
@@ -90,7 +93,7 @@
 -   Why is the Wundt curve the "ideal relation of perceptual consonance and dissonance"?
 
 # foreword
-have you ever heard an instrumental that made you emotional? well, if you did, i'm willing to bet that it contained an i - iv chord progression.
+Have you ever heard an instrumental that made you emotional? well, if you did, i'm willing to bet that it contained an i - iv chord progression.
 
 or, at least, that's what I've noticed about my own music taste.
 
