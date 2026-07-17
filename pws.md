@@ -1,12 +1,5 @@
 # Vragen aan docenten
--   [ ] Het mag in het Engels... toch?
--   [ ] Ik wil competitie doen:
-    -   Hoe werkt dit?
-    -   Kan ik er meerdere doen?
-    -   Is er iemand die mij kan helpen met de juiste vinden en het invoeren?
--   [ ] Wat voor "profiel" is mijn PWS? Gewoon E&M?
--   [ ] Meedoen met uitleg?
-
+-   Popularity formula review
 
 # Research question
 **To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?** 
@@ -84,6 +77,8 @@
 -   For music from the 20th century The McGill Billboard Corpus dataset will be used to obtain both "chord" and "popularity" data for songs in the 20th century
 -   For music from the 21st century, an API given by Hooktheory.com can be used to obtain "chord" data, and a dataset of the Billboard Hot 100 [where the hell did I find this] will be used to obtain "popularity" data
 -   Both the aforementioned datasets will be used to the maximum possible extent, with as many entries as possible
+-   Popularity will be measured as such:            
+    (100 - peak_rank) * weeks_on_chart
 -   Once a "song", "popularity", and "use of progression" table can be defined, it will be viewed in these two ways:
     -   2 dimensional dotplot, with the x axis being NUMBER OF USES OF CHORD PROGRESSION and the y axis being popularity
     -   2 box plots [of trust intervals ?], one of average popularity of songs with the chord progression, compared to without
