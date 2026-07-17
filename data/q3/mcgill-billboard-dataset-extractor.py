@@ -29,3 +29,9 @@ FORMS_OF_CHORD_PROG = {
     #   append to the csv dataset the use_of_chord_prog_counter
 
 # write to a new dataset file the contents of write_dataset
+
+# the dataset will look as such:
+# [
+#   "song": csv.song
+#   "popularity": (100 - csv.peak_rank) * csv.weeks_on_chart
+# ]
