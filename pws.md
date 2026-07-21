@@ -50,20 +50,22 @@
 -   This will yield [some kind of relative significant difference]
 
 ## Question 2
--   Establish a population
+-   A survey will be taken in a quiet classroom in school & online using SurveyCircle
+-   Define a sample and population
     -   Acknowledge location bias
-    -   
-        -   The survey will be taken in a quiet classroom in school & online using SurveyCircle
-        -   The survey will be made digitally [using what application?], but — in physical survey taking — a physical backup will be kept (with local audio fragments on a digital device)
-        -   Every participant must be a resident of a country that reaches the threshold of a share of more than 10% of American artists in their national charts. This can be found [here](https://www.skoove.com/blog/spotify-local-vs-global-music/)
-        -   After the survey has been done, the margin of error is decided by evaluating the final sample size (95% betrouwbaarheidsinterval met margin of error als variable en steekproef en populatie als constanten)
+    -   "Audiences exposed to American music" sets the scope to both North American and European citizens, which is a viable sample group for the survey to reach.
+    -   Every participant must be a resident of a country that reaches the threshold of a share of more than 10% of American artists in their national charts. This can be found [here](https://www.skoove.com/blog/spotify-local-vs-global-music/)
+-   The survey will be made digitally [using what application?], but — in physical survey taking — a physical backup will be kept (with local audio fragments on a digital device)
+-   The survey will be written in English and Dutch
 -   Establish the research questions (10 questions)
-    -   Population check (1 question): Please list all the countries in which you have been a resident for more than 1 year.
+    -   Population check: Please verify that you have resided in any of the countries listed for at least 1 year. Countries that respondents are most likely to be a citizen of are listed in bold:
+        -   Netherlands
+        -   United States
     -   Golden questions (3 questions): Isolated audio fragments of the I - V - IV - iv chord progression, repeated. Expressed through pure sine waves, played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
-    -   Relativity questions (6 questions): isolated audio fragments of other chord progressions. These control progressions were selected from frequently occuring four-chord progression in American music
+    -   Control questions (6 questions): isolated audio fragments of other chord progressions. These control progressions were selected from frequently occuring four-chord progression in American music
         -   "good sounding chords", or very consonant 
             -   I - V - IV - IV
-            -   
+            -   I - I (+ 1 octave) - I - I (+ 1 octave)
             -   
         -   "bad sounding chords", or very dissonant
             -   
@@ -71,7 +73,18 @@
             -   
             -   
         Played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
-    -   
+-   One of the respondents of the survey is "Steve ..." from Marillion. Seeing as he is a popular musician, we can assume he has a strong intuition in perceived enjoyment of melodies. He will thus get a customized survey:
+    -   For every audio fragment, he will answer what he expects the "overall enjoyment of this audio fragment" of other people to be. He will also reason why he ranked his answer as such
+    -   His closed answers will be entered into the database [but will weigh more... maybe?]
+-   The results 
+    -   Using the following data:
+        -   The margin of error
+            -   decided by evaluating the final sample size (95% betrouwbaarheidsinterval met margin of error als variable en steekproef en populatie als constanten)
+        -   Average amt of enjoyment
+        -   Stdev of enjoyment
+    -   A 95% betrouwbaarheidsinterval will be opgesteld.
+    -   The values will also be listed in a table numerically
+-   A conclusion will be made
 
 ## Question 3
 -   For music from the 20th century The McGill Billboard Corpus dataset will be used to obtain both "chord" and "popularity" data for songs in the 20th century
