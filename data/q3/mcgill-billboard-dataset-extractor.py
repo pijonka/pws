@@ -40,6 +40,7 @@ LIST_REMOVE_OUT_STRING = [
     "9",
     "(",
     ")",
+    "/"
     ".",
     " ",
 ]
@@ -51,8 +52,15 @@ def parse_salami_chords(song_chords: str):
     clean_chords = []
     for line in song_chords_in_lines:
         line = line.strip()
-        bars_in_line = re.findall(r"\|([^\|]*.*)\|", line)
+        bars_in_line = re.findall(r"\|([*.)\|", line)
         clean_chords.extend(bars_in_line)
+    # NEW system idea:
+    # for every bar in bars
+        # for every key, chord_prog of forms of chord prog
+            # if the first chord_prog in the list is the first 
+        # if(bar has multiple words):
+            # make each word its own separate bar with | | prefix and suffix
+        
 
     clean_chords_string = "|".join(clean_chords)
     for char in LIST_REMOVE_OUT_STRING:
