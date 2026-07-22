@@ -1,4 +1,5 @@
 import json
+import re 
 # import the billboard dataset
 # the dataset should be formatted as such for the Python script to work:
 # (in the same order as the directories in billboard [
@@ -19,23 +20,13 @@ write_dataset = []
 
 # define hardcoded I - V - IV - iv chord progression object, with strings of the progression in each key
 FORMS_OF_CHORD_PROG = {
-    "c_maj": "|C:maj|G:maj|F:maj|F:min|",
-    "g_maj": "|G:maj|D:maj|C:maj|C:min|",
-    "d_maj": "|D:maj|A:maj|G:maj|G:min|",
-    "a_maj": "|A:maj|E:maj|D:maj|D:min|",
-    "e_maj": "|E:maj|B:maj|A:maj|A:min|"
+    "c_maj": "C:maj|G:maj|F:maj|F:min",
+    "g_maj": "G:maj|D:maj|C:maj|C:min",
+    "d_maj": "D:maj|A:maj|G:maj|G:min",
+    "a_maj": "A:maj|E:maj|D:maj|D:min",
+    "e_maj": "E:maj|B:maj|A:maj|A:min"
 }
 
-LIST_WORDS_OUT_STRING = [
-     "A', intro,",
-     ", (voice",
-     "A, verse",
-]
-    song_chords = song_chords.replace("intro", "")
-    song_chords = song_chords.replace("voice", "")
-    song_chords = song_chords.replace("verse", "")
-    song_chords = song_chords.replace("bridge", "")
-    song_chords = song_chords.replace("fadeout", "")
 LIST_REMOVE_OUT_STRING = [
     "0",
     "1",
@@ -50,32 +41,38 @@ LIST_REMOVE_OUT_STRING = [
     "(",
     ")",
     ".",
-    ","
-    "\n",
-    "\t",
-    "\r",
-    "\v",
     " ",
 ]
+
+# formats salami_chords.txt in a proper format;
+# TODO: currently does not correctly format "X:7" chords
+def parse_salami_chords(song_chords: str):
+    song_chords_in_lines = song_chords.splitlines()
+    clean_chords = []
+    for line in song_chords_in_lines:
+        line = line.strip()
+        bars_in_line = re.findall(r"\|([^\|]*.*)\|", line)
+        clean_chords.extend(bars_in_line)
+
+    clean_chords_string = "|".join(clean_chords)
+    for char in LIST_REMOVE_OUT_STRING:
+        clean_chords_string = clean_chords_string.replace(char, "")
+
+    return clean_chords_string
 
 # for every element in dataset (iterate, it's an array)
 for element in READ_DATASET:
     use_of_chord_prog_counter = 0
 
-    #   open the os directory billboard-2.0-salami_chords/[000{element.array location} but remove zeroes accordingly such that it is always four integers]
-    #   open the salami_chords.txt file
+    #   open the salami_chords.txt file corresponding to the id of this element
     try:
         with open(rf"C:\Users\pijonka\Documents\PWS\data\q3\dataset-mcgill\McGill-Billboard\{element["id"].zfill(4)}\salami_chords.txt") as f:
-            UNMOD_SONG_CHORDS = f.read()
+            unmod_song_chords = f.read()
     except:
         continue
 
-    song_chords = UNMOD_SONG_CHORDS
-
-    for char in LIST_REMOVE_OUT_STRING:
-        song_chords = song_chords.replace(char, "")
-
-    song_chords = song_chords.replace("||", "|")
+    # clean chords formatted to work with the finder thing
+    song_chords = parse_salami_chords(unmod_song_chords)
     
     #   for every key-value pair in FORMS_OF_CHORD_PROG literal:   
     for key, val in FORMS_OF_CHORD_PROG.items():
