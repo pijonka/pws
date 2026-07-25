@@ -67,12 +67,27 @@ for element in READ_DATASET:
     
     #   for every key-value pair in FORMS_OF_CHORD_PROG literal:   
     for key, list_of_chords_in_prog in FORMS_OF_CHORD_PROG.items():
-        # check out each chord in this song
-        for chord in song_chords_list:
-            # if a chord aligns with the first chord of the list
-            if(chord == list_of_chords_in_prog[0]):
-                # check if the next chord is the same chord
-                if(
+        # iterate through each chord in the song
+            # if the chord aligns with the first chord of the list
+                # LOOP1
+                # if the next chord is the same chord
+                    # JMP to LOOP1 with next next chord
+                # if the next chord is the next chord in list_of_chord_in_prog
+                    # LOOP2
+                    # if the next chord is the same chord
+                        # JMP to LOOP2 with next next chord
+                    # if the next chord is the next chord in list_of_chord_in_prog
+                        # LOOP3
+                        # if the next chord is the same chord
+                            # JMP to LOOP3 with next next chord
+                        # if the next chord is the next chord in list_of_chord_in_prog
+                            # LOOP4
+                            # if the next chord is the same chord
+                                # JMP to LOOP4 with next next chord
+                            # if the next chord is the next chord in list_of_chord_in_prog
+                                # it has officially found a single use of the chord progression!
+                        
+                
     #   append to the dataset the use_of_chord_prog_counter
     write_dataset.append({
         "title": element["title"],
