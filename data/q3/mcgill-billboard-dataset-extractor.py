@@ -67,27 +67,32 @@ for element in READ_DATASET:
     
     #   for every key-value pair in FORMS_OF_CHORD_PROG literal:   
     for key, list_of_chords_in_prog in FORMS_OF_CHORD_PROG.items():
-        # iterate through each chord in the song
-            # if the chord aligns with the first chord of the list
-                # LOOP1
-                # if the next chord is the same chord
-                    # JMP to LOOP1 with next next chord
-                # if the next chord is the next chord in list_of_chord_in_prog
-                    # LOOP2
-                    # if the next chord is the same chord
-                        # JMP to LOOP2 with next next chord
-                    # if the next chord is the next chord in list_of_chord_in_prog
-                        # LOOP3
-                        # if the next chord is the same chord
-                            # JMP to LOOP3 with next next chord
-                        # if the next chord is the next chord in list_of_chord_in_prog
-                            # LOOP4
-                            # if the next chord is the same chord
-                                # JMP to LOOP4 with next next chord
-                            # if the next chord is the next chord in list_of_chord_in_prog
-                                # it has officially found a single use of the chord progression!
-                        
-                
+        # song_chord_i = 0
+        # while song_chord_i < len(song_chords_list)
+            # if song_chord_list[song_chord_i] == the first chord of the list (list_of_chords_in_prog[0]):
+                # base_song_chord_i = song_chord_i 
+                # stack_chord_i = 1
+                # chord_of_chord_prog_i = 1 WHICH MEANS SECOND IN LIST (this variable holds the chord in the chord progression the loop is currently trying to find)
+                # while True
+                    # if base_song_chord_i + stack_chord_i != len(song_chord_list)
+                        # if song_chord_list[base_song_chord_i + stack_chord_i] == same chord as last song_chord_list[base_song_chord_i]
+                            # stack_chord_i += 1
+                            # LOOP
+                        # else if song_chord_list[base_song_chord_i + stack_chord_i] == list_of_chords_in_prog[chord_of_chord_prog_i]:
+                            # chord_of_chord_prog_i += 1
+                            # base_chord_i += stack_chord_i
+                            # if chord_of_chord_prog_i == 4
+                                # INSTANCE OF CHORD PROGRESSION SUCCESSFULLY FOUND!
+                                # use_of_chord_prog_counter += 1
+                                # song_chord_i = base_chord_i
+                                # continue
+                            # stack_chord_i = 1
+                            # LOOP
+                    # else
+                        # song_chord_i = base_chord_i + stack_chord_i
+                        # continue
+            # else
+                # song_chord_i += 1
     #   append to the dataset the use_of_chord_prog_counter
     write_dataset.append({
         "title": element["title"],
