@@ -12,7 +12,7 @@ import re
 # ]
 
 # dataset to read
-with open(R"C:\Users\pijonka\Documents\PWS\data\q3\dataset-mcgill\billboard-2.0-index.json") as f:
+with open(R"C:\Users\pijonka\Documents\PWS\data\q3\dataset-20thcent-mcgill-billboard\billboard-2.0-index.json") as f:
     READ_DATASET = json.load(f)
 
 # new dataset to write to
@@ -57,7 +57,7 @@ for element in READ_DATASET:
 
     #   open the majmin.lab file corresponding to the id of this element
     try:
-        with open(rf"C:\Users\pijonka\Documents\PWS\data\q3\dataset-mcgill\McGill-Billboard\{element["id"].zfill(4)}\majmin.lab") as f:
+        with open(rf"C:\Users\pijonka\Documents\PWS\data\q3\dataset-20thcent-mcgill-billboard\LAB-McGill-Billboard\{element["id"].zfill(4)}\majmin.lab") as f:
             unmod_song_chords = f.read()
     except:
         continue
@@ -67,32 +67,58 @@ for element in READ_DATASET:
     
     #   for every key-value pair in FORMS_OF_CHORD_PROG literal:   
     for key, list_of_chords_in_prog in FORMS_OF_CHORD_PROG.items():
-        # song_chord_i = 0
-        # while song_chord_i < len(song_chords_list)
-            # if song_chord_list[song_chord_i] == the first chord of the list (list_of_chords_in_prog[0]):
-                # base_song_chord_i = song_chord_i 
-                # stack_chord_i = 1
-                # chord_of_chord_prog_i = 1 WHICH MEANS SECOND IN LIST (this variable holds the chord in the chord progression the loop is currently trying to find)
-                # while True
-                    # if base_song_chord_i + stack_chord_i != len(song_chord_list)
-                        # if song_chord_list[base_song_chord_i + stack_chord_i] == same chord as last song_chord_list[base_song_chord_i]
-                            # stack_chord_i += 1
+        # index / position of iteration in song chord list
+        song_chord_i = 0
+
+        # for every chord in the song
+        while song_chord_i < len(song_chords_list):
+            # if the current point on the song chord list is the first chord of the list
+            if song_chords_list[song_chord_i] == list_of_chords_in_prog[0]:
+                base_song_chord_i = song_chord_i 
+                stack_chord_i = 1
+                # THIS MEANS SECOND CHORD IN CHORD PROG LIST (this variable holds the chord in the chord progression the loop is currently trying to find
+                chord_of_chord_prog_i = 1 
+                while True:
+                    if base_song_chord_i + stack_chord_i != len(song_chords_list):
+                        # if the chord the stack pointer is pointing to (usually the next chord) is equal to the chord the base pointer is on (the "current" chord)
+                        if song_chords_list[base_song_chord_i + stack_chord_i] == song_chords_list[base_song_chord_i]:
+                            # it's the same chord, try to look at one further
+                            stack_chord_i += 1
                             # LOOP
-                        # else if song_chord_list[base_song_chord_i + stack_chord_i] == list_of_chords_in_prog[chord_of_chord_prog_i]:
-                            # chord_of_chord_prog_i += 1
-                            # base_chord_i += stack_chord_i
-                            # if chord_of_chord_prog_i == 4
+                        # if the chord the stack pointer is pointing to (usually the next chord) is equal to the next chord in the chord progression (e.g. if base = I and stack = V)
+                        elif song_chords_list[base_song_chord_i + stack_chord_i] == list_of_chords_in_prog[chord_of_chord_prog_i]:
+                            # we have found a consequent chord in the progression!
+                            chord_of_chord_prog_i += 1
+
+                            # move the base pointer to the stack pointer, such that base saves the "current" chord
+                            base_song_chord_i += stack_chord_i
+
+                            # if this is the last chord in the progression
+                            if chord_of_chord_prog_i == 4:
                                 # INSTANCE OF CHORD PROGRESSION SUCCESSFULLY FOUND!
-                                # use_of_chord_prog_counter += 1
-                                # song_chord_i = base_chord_i
-                                # continue
-                            # stack_chord_i = 1
+                                use_of_chord_prog_counter += 1
+
+                                # set the index here so that it doesn't double check the same chord
+                                song_chord_i = base_song_chord_i
+                                
+                                chord_of_chord_prog_i = 0
+
+                                # stop looping
+                                break
+
+                            stack_chord_i = 1
                             # LOOP
-                    # else
-                        # song_chord_i = base_chord_i + stack_chord_i
-                        # continue
-            # else
-                # song_chord_i += 1
+                        else: # if the stack's chord is nothing special
+                            song_chord_i += 1
+                            # stop looping
+                            break # eradicate the pointers completely and just keep moving normally
+                    else:
+                        song_chord_i = len(song_chords_list)
+                        break # stop looping
+            else: # if the current point is not the first chord of chord progression
+                # just keep iterating through it
+                song_chord_i += 1
+
     #   append to the dataset the use_of_chord_prog_counter
     write_dataset.append({
         "title": element["title"],
