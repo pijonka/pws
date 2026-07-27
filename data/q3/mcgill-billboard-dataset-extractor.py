@@ -21,10 +21,19 @@ write_dataset = []
 # define hardcoded I - V - IV - iv chord progression object, with strings of the progression in each key
 FORMS_OF_CHORD_PROG = {
     "c_maj": ["C:maj", "G:maj", "F:maj", "F:min"],
-    "g_maj": "G:maj|D:maj|C:maj|C:min",
-    "d_maj": "D:maj|A:maj|G:maj|G:min",
-    "a_maj": "A:maj|E:maj|D:maj|D:min",
-    "e_maj": "E:maj|B:maj|A:maj|A:min"
+    "g_maj": ["G:maj", "D:maj", "C:maj", "C:min"],
+    "d_maj": ["D:maj", "A:maj", "G:maj", "G:min"],
+    "a_maj": ["A:maj", "E:maj", "D:maj", "D:min"],
+    "e_maj": ["E:maj", "B:maj", "A:maj", "A:min"],
+    "b_maj": ["B:maj", "F#:maj", "E:maj", "E:min"],
+    "f_maj": ["F:maj", "C:maj", "Bb:maj", "Bb:min"],
+    "bb_maj": ["Bb:maj", "F:maj", "Eb:maj", "Eb:min"],
+    "eb_maj": ["Eb:maj", "Bb:maj", "Ab:maj", "Ab:min"],
+    "ab_maj": ["Ab:maj", "Eb:maj", "Db:maj", "Db:min"],
+    "db_maj": ["Db:maj", "Ab:maj", "Gb:maj", "Gb:min"],
+    "gb_maj": ["Gb:maj", "Db:maj", "Cb:maj", "Cb:min"],
+    "f_sharp_maj": ["F#:maj", "C#:maj", "B:maj", "B:min"],
+    "c_sharp_maj": ["C#:maj", "G#:maj", "F#:maj", "F#:min"],
 }
 
 LIST_REMOVE_OUT_STRING = [
