@@ -1,0 +1,3 @@
+# Mcgill Billboard extractor and json output script
+-   First attempt was to make a script completely based on parsing the text files of the salami_chords, and merging the collected data with the index file. The biggest issue with this was that the chord files proved to be much less predictable than I'd originally expected. I currently have it working to the point it will parse the chord progressions as long as every chord is played once per bar, and isn't a seventh. Very surprisingly, of the ~800 parsable songs, 0 contain a I - V - IV - iv chord progression of the aforementioned form.
+-   I discovered there was already a parser for the dataset, made by a fellow Dutch student. Getting the program to run is proving to be incredibly difficult due to the age of the parser
