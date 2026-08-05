@@ -5,7 +5,7 @@
 **To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?** 
 
 ## Sub-questions
-1.  What is the difference between the average amount of dissonance throughout a I - V - IV - iv chord progression, and the average amount of dissonance in the Wundt curve?
+1.  How does the average amount of dissonance of the I - V - IV - iv chord progression compare to different more consonant and more dissonant progressions and the Wundt curve?
 2.  To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared upon initial, isolated observation?
 3.  What is the relation between the popularity of a song and the use of a I - V - IV - iv chord progression?
 
@@ -37,17 +37,25 @@
 
 # Layout
 ## Question 1
--   Introduce the subject. 
-    -   The Wundt curve: a supposedly "ideal" relation of consonance and dissonance in a song
-    -   Include pictures of a piano octave with two keys (deriving from the triads to be analyzed) selected, and their accompanying isolated partial note sound waves. Then accompany those visuals with the raw sound using [sound in latex tool]. Express the total amount of dissonance in these intervals using Tenny Height. 
--   Use the previously established foundation to analyze the chord progression, using the same structure, but with the four triads. For each triad: piano octave with three selected notes, three partial sound waves in a graph, and raw sound. Express the total amount of dissonance in these triads using Tenny Height.
--   Define a "maximum amount of dissonance" in a triad, by measuring the total amount of dissonance in three adjacent semitones in Tenny Height
--   Graph the function of the Wundt curve, but normalize it such that the minimum of the grpah is 0, and the maximum of the graph is the "maximum amount of dissonance"
--   Gather the data into a table with columns "fraction of full chord progression's length in time" [ <-- awfully wordy and inconspicuous], "dissonance in chord progression", and "dissonance in Wundt curve"
--   Compare the data of the table
-    -   Geometrically, this is done by placing dots of the chord progression's data over the Wundt curve
-    -   Numerically, this is done by comparing the two values using max. vcp
--   This will yield [some kind of relative significant difference]
+-   Introduce the subject
+    -   Consonance = a relatively simple harmonic ratio = the frequencies don't interfere => sounds "good"
+    -   Dissonance = a relatively complicated harmonic ratio = the frequencies interfere a lot mathematically => sounds "bad"
+    -   Consonance is also often regarded as "predictable" while dissonance is regarded as "unpredictable".
+    -   Tenny Height = a measure for harmonic complexity, which indicates dissonance [does it?]
+    -   "Average dissonance" as described in this research project = the mean of the tenny height of each individual chord ratio
+-   Collect data:
+    -   Average dissonance of the following chord progressions:
+        -   octave
+        -   I - V - IV - IV
+        -   I - V - IV - iv
+        -   I - V - iv - iv
+        -   I - v - iv - iv
+        -   i - v - iv - iv
+        -   adj triad 
+    -   Arc of dissonance of these chord progressions
+-   Analyze data
+    -   I - V - IV - iv is distinct from the other chord progressions in that it has this level of dissonance: ...
+    -   The arc corresponds to the Wundt curve in this way: ...
 
 ## Question 2
 -   A survey will be taken in a quiet classroom in school & online using SurveyCircle
@@ -108,3 +116,6 @@ or, at least, that's what I've noticed about my own music taste.
 # Sources
 (https://www.researchgate.net/figure/Number-of-frequent-chord-progression-patterns-as-a-function-of-the-chord-progression_fig2_278677700)
 https://www.hooktheory.com/theorytab/view/olivia-rodrigo/stupid-song
+https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2017.00147/full
+The Arithmetic of Listening Tuning Theory and History for the Impractical Musician (Kyle Gann)
+hhttps://www.researchgate.net/publication/332966918_Theory_data_and_application_of_psychological_principles_for_music_preferencettps://direct.mit.edu/books/monograph/1961/Sweet-AnticipationMusic-and-the-Psychology-of

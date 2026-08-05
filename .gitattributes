@@ -4,3 +4,4 @@ data/** filter=lfs diff=lfs merge=lfs -text
 data/**/*.py !text -filter -merge -diff
 data/**/*.js !text -filter -merge -diff
 data/**/*.cpp !text -filter -merge -diff
+C:/Users/pijonka/Documents/PWS/data/q2/audio_frag_patterns/audio_frag_patterns.flp filter=lfs diff=lfs merge=lfs -text
