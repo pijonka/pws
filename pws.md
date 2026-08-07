@@ -42,7 +42,7 @@
     -   Dissonance = a relatively complicated harmonic ratio = the frequencies interfere a lot mathematically => sounds "bad"
     -   Consonance is also often regarded as "predictable" while dissonance is regarded as "unpredictable".
     -   Tenny Height = a measure for harmonic complexity, which indicates dissonance [does it?]
-    -   "Average dissonance" as described in this research project = the mean of the tenny height of each individual chord ratio
+    -   "Average dissonance" as described in this research project = the mean of the tenny height of each individual Pythagorean chord ratio
 -   Collect data:
     -   Average dissonance of the following chord progressions:
         -   octave
@@ -55,7 +55,9 @@
     -   Arc of dissonance of these chord progressions
 -   Analyze data
     -   I - V - IV - iv is distinct from the other chord progressions in that it has this level of dissonance: ...
-    -   The arc corresponds to the Wundt curve in this way: ...
+    -   And this arc of dissonance: ...
+    -   The arc corresponds to the Wundt curve in this way: ... (max. vcp?)
+    -   While other arcs correspond to the Wundt curve in this way: ... 
 
 ## Question 2
 -   A survey will be taken in a quiet classroom in school & online using SurveyCircle
