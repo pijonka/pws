@@ -23,11 +23,11 @@ def combine_ratios(ratio_a: tuple[int, int], ratio_b: tuple[int, int]):
     return (x // gcd_all, y // gcd_all, z // gcd_all)
 
 # hardcoded pythagoras ratio values
-PYTHAGOREAN_MAJ3 = (81/64).as_integer_ratio()
-PYTHAGOREAN_MIN3 = (32/27).as_integer_ratio()
-OCTAVE = (2/1).as_integer_ratio()
-PERF5 = (3/2).as_integer_ratio()
-PYTHAGOREAN_HALF_STEP = (256/243).as_integer_ratio()
+PYTHAGOREAN_MAJ3 = (81, 64)
+PYTHAGOREAN_MIN3 = (32, 27)
+OCTAVE = (2, 1)
+PERF5 = (3, 2)
+PYTHAGOREAN_HALF_STEP = (256, 243)
 
 # constexpr chord ratio values
 MAJOR_TRIAD_RATIO = combine_ratios(PYTHAGOREAN_MAJ3, PERF5)
