@@ -60,4 +60,4 @@ print("Ratio adjacent notes", ADJ_TRIAD_RATIO)
 
 for chord_name, th_list in chords.items():
     # print(f"Average TH of {chord_name} = ", statistics.mean(th_list))
-    print(f"Percentage of maximum TH of {chord_name} = ", (((statistics.mean(th_list) - 3) / ADJ_TH * 100)) )
+    print(f"Percentage of maximum TH of {chord_name} = ", (((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100)) )
