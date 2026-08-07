@@ -58,6 +58,9 @@ print("Ratio minor", MINOR_TRIAD_RATIO)
 print("Ratio octave", OCTAVE_TRIAD_RATIO)
 print("Ratio adjacent notes", ADJ_TRIAD_RATIO)
 
-for chord_name, th_list in chords.items():
+for chord_prog_name, th_list in chords.items():
     # print(f"Average TH of {chord_name} = ", statistics.mean(th_list))
-    print(f"Percentage of maximum TH of {chord_name} = ", (((statistics.mean(th_list) - 3) / ADJ_TH * 100)) )
+    print(f"Average dissonance Pythagorean normalized of {chord_prog_name} = ", (((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100)) )
+
+for chord_prog_name, th_list in chords.items():
+    print(f"Arc of dissonance of {chord_prog_name} = ", " - ".join(map(str, th_list)))
