@@ -40,9 +40,12 @@
 -   Introduce the subject
     -   Consonance = a relatively simple harmonic ratio = the frequencies don't interfere => sounds "good"
     -   Dissonance = a relatively complicated harmonic ratio = the frequencies interfere a lot mathematically => sounds "bad"
-    -   Consonance is also often regarded as "predictable" while dissonance is regarded as "unpredictable".
+    -   Consonance is also often regarded as "predictable" while dissonance is regarded as "unpredictable". Studies have shown that listening to dissonance induces a higher state of arousal, because the brain expects a consonant resolution (Sweet Anticipation book).
     -   Tenny Height = a measure for harmonic complexity, which indicates dissonance [does it?]
-    -   "Average dissonance" as described in this research project = the mean of the tenny height of each individual Pythagorean chord ratio
+    -   "Average dissonance" in a chord progression = the mean of the tenny height of each individual chord ratio
+    -   "Normalized average dissonance" = the average dissonance normalized between the bounds of "minimum dissonance" and "maximum dissonance" on a scale of 0-100
+    -   "Minimum dissonance" = a triad of octave and two octaves
+    -   "Maximum dissonance" = a triad of adjacent notes
 -   Collect data:
     -   Average dissonance of the following chord progressions:
         -   octave

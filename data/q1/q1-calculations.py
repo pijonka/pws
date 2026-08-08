@@ -9,32 +9,36 @@ def tenny_height(ratios):
     product = math.prod(ratios)
     return math.log2(product)
 
-def equal_temperament_frequency_calculator(deviation_from_a4):
-    return 440 * pow(2, deviation_from_a4/12)
+# takes two ratio's and combines them into one ratio of three elements (a tuple with three elements)
+def combine_ratios(ratio_a: tuple[int, int], ratio_b: tuple[int, int]) -> tuple[int, int, int]:
+    lcm_of_fracs = math.lcm(ratio_a[1], ratio_b[1])
+    x = lcm_of_fracs
+    y = ratio_a[0]/ratio_a[1] * lcm_of_fracs
+    z = ratio_b[0]/ratio_b[1] * lcm_of_fracs
+    return (int(x), int(y), int(z))
 
-# get the LCM of the denominator of ratio a and numerator of ratio b
-def combine_ratios(ratio_a: tuple[int, int], ratio_b: tuple[int, int]):
-    aden_bnum_common = math.lcm(ratio_a[1], ratio_b[0])
-    x = ratio_a[0] * (aden_bnum_common // ratio_a[1])
-    y = aden_bnum_common
-    z = ratio_b[1] * (aden_bnum_common // ratio_b[0])
-
-    gcd_all = math.gcd(x, y, z)
-    return (x // gcd_all, y // gcd_all, z // gcd_all)
+# hardcoded ratio values 
+OCTAVE = (2, 1)
+OCTAVE_2 = (4, 1)
+PERF5 = (3, 2)
 
 # hardcoded pythagoras ratio values
 PYTHAGOREAN_MAJ3 = (81, 64)
 PYTHAGOREAN_MIN3 = (32, 27)
-OCTAVE = (2, 1)
-PERF5 = (3, 2)
 PYTHAGOREAN_HALF_STEP = (256, 243)
 
-# constexpr chord ratio values
-MAJOR_TRIAD_RATIO = combine_ratios(PYTHAGOREAN_MAJ3, PERF5)
-MINOR_TRIAD_RATIO = combine_ratios(PYTHAGOREAN_MIN3, PERF5)
-OCTAVE_TRIAD_RATIO = combine_ratios(OCTAVE, OCTAVE)
-ADJ_TRIAD_RATIO = combine_ratios(PYTHAGOREAN_HALF_STEP, PYTHAGOREAN_HALF_STEP)
+# hardcoded 5-limit ratio values
+RATIO5_MAJ3 = (5, 4)
+RATIO5_MIN3 = (6, 5)
+RATIO5_HALF_STEP_MAJ = (16, 15)
+RATIO5_HALF_STEP_MIN = (25, 24)
+RATIO5_WHOLE_STEP_MIN = (9, 8)
 
+# constexpr chord ratio values
+MAJOR_TRIAD_RATIO = combine_ratios(RATIO5_MAJ3, PERF5)
+MINOR_TRIAD_RATIO = combine_ratios(RATIO5_MIN3, PERF5)
+OCTAVE_TRIAD_RATIO = combine_ratios(OCTAVE, OCTAVE_2)
+ADJ_TRIAD_RATIO = combine_ratios(RATIO5_HALF_STEP_MIN, RATIO5_WHOLE_STEP_MIN)
 
 MAJOR_TH = tenny_height(MAJOR_TRIAD_RATIO)
 MINOR_TH = tenny_height(MINOR_TRIAD_RATIO)
@@ -60,7 +64,7 @@ print("Ratio adjacent notes", ADJ_TRIAD_RATIO)
 
 for chord_prog_name, th_list in chords.items():
     # print(f"Average TH of {chord_name} = ", statistics.mean(th_list))
-    print(f"Average dissonance Pythagorean normalized of {chord_prog_name} = ", (((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100)) )
+    print(f"Average dissonance (5-limit ratio's) (normalized between bounds) of {chord_prog_name} = ", (((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100)) )
 
 for chord_prog_name, th_list in chords.items():
     print(f"Arc of dissonance of {chord_prog_name} = ", " - ".join(map(str, th_list)))
