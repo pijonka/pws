@@ -64,7 +64,30 @@ print("Ratio adjacent notes", ADJ_TRIAD_RATIO)
 
 for chord_prog_name, th_list in chords.items():
     # print(f"Average TH of {chord_name} = ", statistics.mean(th_list))
-    print(f"Average dissonance (5-limit ratio's) (normalized between bounds) of {chord_prog_name} = ", (((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100)) )
+    ave_dissonance_chord = round(((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100), 2)
+    print(f"Average dissonance (5-limit ratio's) (normalized between bounds) of {chord_prog_name} = ", ave_dissonance_chord)
 
 for chord_prog_name, th_list in chords.items():
-    print(f"Arc of dissonance of {chord_prog_name} = ", " - ".join(map(str, th_list)))
+    normalized_th_list = []
+    for el in th_list:
+        el = (el - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH) * 100
+        el = round(el, 2)
+        normalized_th_list.append(el)
+
+    print(f"Arc of dissonance of {chord_prog_name} = ", " - ".join(map(str, normalized_th_list)))
+
+
+# arc of dissonance of wundt curve
+# x_curve = 0
+# r(x): return 100/(1 + pow(math.e, -0.1(x-20)))
+# a(x): return 100/(1 + pow(math.e, -0.1(x-55)))
+# w(x): return r(x) - a(x)
+# w(x_curve)
+# x_curve = 25
+# w(x_curve)
+# x_curve = 50
+# w(x_curve)
+# x_curve = 75
+# w(x_curve)
+# x_curve = 100
+# w(x_curve)
