@@ -1,5 +1,7 @@
 # Vragen aan docenten
 -   Popularity formula review
+-   Average dissonance berekening
+-   Average dissonance vergelijken met wat? Wundt curve? Heeft iemand een idee?
 
 # Research question
 **To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?** 
@@ -75,20 +77,17 @@
         -   Netherlands
         -   United States
     -   Golden questions (3 questions): Isolated audio fragments of the I - V - IV - iv chord progression, repeated. Expressed through pure sine waves, played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
-    -   Control questions (6 questions): isolated audio fragments of other chord progressions. These control progressions were selected from frequently occuring four-chord progression in American music
-        -   "good sounding chords", or very consonant 
-            -   I - V - IV - IV
-            -   I - I (+ 1 octave) - I - I (+ 1 octave)
-            -   
-        -   "bad sounding chords", or very dissonant
-            -   
-            -   
-            -   
-            -   
+    -   Control questions (6 questions): isolated audio fragments of the chord progressions analyzed in q1. 
+        -   octave
+        -   I - V - IV - IV
+        -   I - V - iv - iv
+        -   I - v - iv - iv
+        -   i - v - iv - iv
+        -   adj triad 
         Played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
 -   One of the respondents of the survey is "Steve ..." from Marillion. Seeing as he is a popular musician, we can assume he has a strong intuition in perceived enjoyment of melodies. He will thus get a customized survey:
     -   For every audio fragment, he will answer what he expects the "overall enjoyment of this audio fragment" of other people to be. He will also reason why he ranked his answer as such
-    -   His closed answers will be entered into the database [but will weigh more... maybe?]
+    -   [?] His closed answers will be entered into the database [but will weigh more... maybe?]
 -   The results 
     -   Using the following data:
         -   The margin of error
