@@ -17,6 +17,9 @@ def combine_ratios(ratio_a: tuple[int, int], ratio_b: tuple[int, int]) -> tuple[
     z = ratio_b[0]/ratio_b[1] * lcm_of_fracs
     return (int(x), int(y), int(z))
 
+# returns average dissonance of a chord
+def ave_dissonance(chord: list):
+    return round(((statistics.mean(chord) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100), 2)
 # hardcoded ratio values 
 OCTAVE = (2, 1)
 OCTAVE_2 = (4, 1)
@@ -77,17 +80,11 @@ for chord_prog_name, th_list in chords.items():
     print(f"Arc of dissonance of {chord_prog_name} = ", " - ".join(map(str, normalized_th_list)))
 
 
-# arc of dissonance of wundt curve
-# x_curve = 0
-# r(x): return 100/(1 + pow(math.e, -0.1(x-20)))
-# a(x): return 100/(1 + pow(math.e, -0.1(x-55)))
-# w(x): return r(x) - a(x)
-# w(x_curve)
-# x_curve = 25
-# w(x_curve)
-# x_curve = 50
-# w(x_curve)
-# x_curve = 75
-# w(x_curve)
-# x_curve = 100
-# w(x_curve)
+# wundt curve function, normalized from 0 to 100
+def reward(x): return 100/(1 + pow(math.e, -0.1 * (x-20)))
+def aversion(x): return 100/(1 + pow(math.e, -0.1 * (x-55)))
+def wundt_curve(x): return reward(x) - aversion(x)
+
+for chord_prog_name, th_list in chords.items():
+    ave_dissonance_chord = round(((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100), 2)
+    print(f"Difference average dissonance of {chord_prog_name} vs the ideal amount of dissonance according to Wundt curve = ", abs(37.5 - ave_dissonance_chord))
