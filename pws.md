@@ -7,7 +7,7 @@
 **To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?** 
 
 ## Sub-questions
-1.  How does the average amount of dissonance of the I - V - IV - iv chord progression compare to different more consonant and more dissonant progressions and the Wundt curve?
+1.  How does the average amount of dissonance of the I - V - IV - iv chord progression compare to different more consonant and more dissonant progressions, and other popular progressions?
 2.  To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared upon initial, isolated observation?
 3.  What is the relation between the popularity of a song and the use of a I - V - IV - iv chord progression?
 
@@ -57,12 +57,17 @@
         -   I - v - iv - iv
         -   i - v - iv - iv
         -   adj triad 
+        -   (popular prog) I_V_vi_IV
+        -   (popular prog) I_V_vi_iii_IV
+        -   (popular prog) vi_V_IV_V
     -   Arc of dissonance of these chord progressions
 -   Analyze data
     -   I - V - IV - iv is distinct from the other chord progressions in that it has this level of dissonance: ...
+        -   For the more/less dissonant progs, this reveals ...
+        -   For the other populra progs, this reveals ...
     -   And this arc of dissonance: ...
-    -   The arc corresponds to the Wundt curve in this way: ... (max. vcp?)
-    -   While other arcs correspond to the Wundt curve in this way: ... 
+        -   For the more/less dissonant progs, this reveals ...
+        -   For the other populra progs, this reveals ...
 
 ## Question 2
 -   A survey will be taken in a quiet classroom in school & online using SurveyCircle
