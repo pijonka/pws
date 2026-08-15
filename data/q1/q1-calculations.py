@@ -51,11 +51,14 @@ ADJ_TH = tenny_height(ADJ_TRIAD_RATIO)
 chords = {
     "octave": [OCTAVE_TH],
     "I_V_IV_IV": [MAJOR_TH, MAJOR_TH, MAJOR_TH, MAJOR_TH],
-    "I_V_IV_iv": [MAJOR_TH, MAJOR_TH, MAJOR_TH, MINOR_TH],
+    "! I_V_IV_iv": [MAJOR_TH, MAJOR_TH, MAJOR_TH, MINOR_TH],
     "I_V_iv_iv": [MAJOR_TH, MAJOR_TH, MINOR_TH, MINOR_TH],
     "I_v_iv_iv": [MAJOR_TH, MINOR_TH, MINOR_TH, MINOR_TH],
     "i_v_iv_iv": [MINOR_TH, MINOR_TH, MINOR_TH, MINOR_TH],
     "adj": [ADJ_TH],
+    "(popular prog) I_V_vi_IV": [MAJOR_TH, MAJOR_TH, MINOR_TH, MAJOR_TH],
+    "(popular prog) I_V_vi_iii_IV": [MAJOR_TH, MAJOR_TH, MINOR_TH, MINOR_TH, MAJOR_TH],
+    "(popular prog) vi_V_IV_V": [MINOR_TH, MAJOR_TH, MAJOR_TH, MAJOR_TH],
 }
 
 
@@ -79,12 +82,3 @@ for chord_prog_name, th_list in chords.items():
 
     print(f"Arc of dissonance of {chord_prog_name} = ", " - ".join(map(str, normalized_th_list)))
 
-
-# wundt curve function, normalized from 0 to 100
-def reward(x): return 100/(1 + pow(math.e, -0.1 * (x-20)))
-def aversion(x): return 100/(1 + pow(math.e, -0.1 * (x-55)))
-def wundt_curve(x): return reward(x) - aversion(x)
-
-for chord_prog_name, th_list in chords.items():
-    ave_dissonance_chord = round(((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100), 2)
-    print(f"Difference average dissonance of {chord_prog_name} vs the ideal amount of dissonance according to Wundt curve = ", abs(37.5 - ave_dissonance_chord))
