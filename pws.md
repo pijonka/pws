@@ -85,6 +85,17 @@
         -   i - v - iv - iv
         -   adj triad 
         Played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
+    So, in order:
+    -   Nationality
+    -   octave
+    -   I - V - IV - IV
+    -   ! I - V - IV - iv
+    -   I - V - iv - iv
+    -   I - v - iv - iv
+    -   ! I - V - IV - iv
+    -   i - v - iv - iv
+    -   adj triad 
+    -   ! I - V - IV - iv
 -   One of the respondents of the survey is "Steve ..." from Marillion. Seeing as he is a popular musician, we can assume he has a strong intuition in perceived enjoyment of melodies. He will thus get a customized survey:
     -   For every audio fragment, he will answer what he expects the "overall enjoyment of this audio fragment" of other people to be. He will also reason why he ranked his answer as such
     -   [?] His closed answers will be entered into the database [but will weigh more... maybe?]
