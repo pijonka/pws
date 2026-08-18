@@ -1,7 +1,20 @@
+# REMINDER OM DEZE LIJST TE UPDATEN IN DEZE NOTES EN Q1
+-   A octave
+-   B I - V - IV - IV
+-   C ! I - V - IV - iv
+-   D I - V - iv - iv
+-   E I - v - iv - iv
+-   F i - v - iv - iv
+-   G adj
+-   H (pop) I - V - vi - IV
+-   I (pop) vi - V - IV - V
+-   J (pop) I - vi - IV - V
+
 # Vragen aan docenten
 -   Popularity formula review
 -   Average dissonance berekening
 -   Average dissonance vergelijken met wat? Wundt curve? Heeft iemand een idee?
+-   Mag ik Maimonides op de enquete website hebben staan
 
 # Research question
 **To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?** 
@@ -58,8 +71,8 @@
         -   i - v - iv - iv
         -   adj triad 
         -   (popular prog) I_V_vi_IV
-        -   (popular prog) I_V_vi_iii_IV
         -   (popular prog) vi_V_IV_V
+        -   (popular prog) I_vi_IV_V
     -   Arc of dissonance of these chord progressions
 -   Analyze data
     -   I - V - IV - iv is distinct from the other chord progressions in that it has this level of dissonance: ...
@@ -92,15 +105,17 @@
         Played at varying speeds and pitches to avoid confounding variables. The respondent gives their perceived "enjoyment" on a scale of 1-10.
     So, in order:
     -   Nationality
-    -   octave
-    -   I - V - IV - IV
-    -   ! I - V - IV - iv
-    -   I - V - iv - iv
-    -   I - v - iv - iv
-    -   ! I - V - IV - iv
-    -   i - v - iv - iv
-    -   adj triad 
-    -   ! I - V - IV - iv
+    -   H
+    -   C
+    -   I
+    -   G
+    -   E
+    -   J
+    -   A
+    -   F
+    -   D
+    -   B
+    -   Als beloning voor de enquete maken  mag je een liedje naar keuze invullen + e-mail, en dan zal ik de ... analyzeren en dat later opsturen.
 -   One of the respondents of the survey is "Steve ..." from Marillion. Seeing as he is a popular musician, we can assume he has a strong intuition in perceived enjoyment of melodies. He will thus get a customized survey:
     -   For every audio fragment, he will answer what he expects the "overall enjoyment of this audio fragment" of other people to be. He will also reason why he ranked his answer as such
     -   [?] His closed answers will be entered into the database [but will weigh more... maybe?]
