@@ -1,4 +1,4 @@
-# REMINDER OM DEZE LIJST TE UPDATEN IN DEZE NOTES EN Q1
+# DEFINITIVE chords te onderzoeken list
 -   A octave
 -   B I - V - IV - IV
 -   C ! I - V - IV - iv
@@ -11,16 +11,18 @@
 -   J (pop) I - vi - IV - V
 
 # Vragen aan docenten
+-   Kan ik niet gewoon de layout gebruiken als mijn pva?
 -   Popularity formula review
 -   Average dissonance berekening
--   Average dissonance vergelijken met wat? Wundt curve? Heeft iemand een idee?
+    -   Meneer van Eisden tekst:
+        -   Oke dus het grootste probleem is the use of three term ratio's. Ik kan dat alleen doen als ik de convention heb dat ze allemaal zijn reduced naar hun simplest form; in dat geval blijft de comparison van complexity gelijk... toch?
 -   Mag ik Maimonides op de enquete website hebben staan
 
 # Research question
 **To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?** 
 
 ## Sub-questions
-1.  How does the average amount of dissonance of the I - V - IV - iv chord progression compare to different more consonant and more dissonant progressions, and other popular progressions?
+1.	How does the normalized harmonic complexity of the I - V - IV - iv chord progression compare to different chord progressions?
 2.  To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared upon initial, isolated observation?
 3.  What is the relation between the popularity of a song and the use of a I - V - IV - iv chord progression?
 
@@ -52,13 +54,17 @@
 
 # Layout
 ## Question 1
--   Introduce the subject
-    -   Consonance = a relatively simple harmonic ratio = the frequencies don't interfere => sounds "good"
-    -   Dissonance = a relatively complicated harmonic ratio = the frequencies interfere a lot mathematically => sounds "bad"
-    -   Consonance is also often regarded as "predictable" while dissonance is regarded as "unpredictable". Studies have shown that listening to dissonance induces a higher state of arousal, because the brain expects a consonant resolution (Sweet Anticipation book).
-    -   Tenny Height = a measure for harmonic complexity, which indicates dissonance [does it?]
-    -   "Average dissonance" in a chord progression = the mean of the tenny height of each individual chord ratio
-    -   "Normalized average dissonance" = the average dissonance normalized between the bounds of "minimum dissonance" and "maximum dissonance" on a scale of 0-100
+-   Introduce the subject or maybe this sohuld be theoretisch kader
+    -   Low harmonic complexity = a relatively simple harmonic ratio = the frequencies don't interfere => sounds "predictable"
+    -   High harmonic complexity = a relatively complicated harmonic ratio = the frequencies interfere a lot mathematically => sounds "unpredictable"
+    -   Low harmonic complexity is also often regarded as "predictable" while high harmonic complexity is regarded as "unpredictable". [Studies have shown that listening to dissonance induces a higher state of arousal, because the brain expects a consonant resolution (Sweet Anticipation book). *But that doesn't mean anything for harmonic complexity necessarily*]
+    -   Tenney Height = a measure for harmonic complexity 
+    -   Five-limit Just Intonation = an approximation of interval and chord relationships into small whole-number frequency ratios
+    -   Frequency ratio = a comparison of two sound wave frequencies by dividing one frequency by the other
+    -   Five-limit Just Intonation Triad = a combined three-term ratio of the frequency ratios a triad contains.
+    -   Harmonic complexity of a chord = the Tenney Height of the Just Intonation Triad
+    -   Normalized harmonic complexity of a chord progression = the mean of the tenny height of each individual chord ratio
+    -   Normalized average dissonance = the average dissonance normalized between the bounds of "minimum dissonance" and "maximum dissonance" on a scale of 0-100
     -   "Minimum dissonance" = a triad of octave and two octaves
     -   "Maximum dissonance" = a triad of adjacent notes
 -   Collect data:
@@ -87,7 +93,7 @@
 -   Define a sample and population
     -   Acknowledge location bias
     -   "Audiences exposed to American music" sets the scope to both North American and European citizens, which is a viable sample group for the survey to reach.
-    -   Every participant must be a resident of a country that reaches the threshold of a share of more than 10% of American artists in their national charts. This can be found [here](https://www.skoove.com/blog/spotify-local-vs-global-music/)
+    -   Every participant must be a resident of a country that reaches the threshold of a share of more than 10% of American artists in their national charts. This can be found [here](https://www.skoove.com/blog/spotify-local-vs-global-music/) [BELANGRIJK OM DIT TE RATIONALIZEN OF VERANDEREN]
 -   The survey will be made digitally [using what application?], but — in physical survey taking — a physical backup will be kept (with local audio fragments on a digital device)
 -   The survey will be written in English and Dutch
 -   Establish the research questions (10 questions)
@@ -153,4 +159,6 @@ or, at least, that's what I've noticed about my own music taste.
 https://www.hooktheory.com/theorytab/view/olivia-rodrigo/stupid-song
 https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2017.00147/full
 The Arithmetic of Listening Tuning Theory and History for the Impractical Musician (Kyle Gann)
-hhttps://www.researchgate.net/publication/332966918_Theory_data_and_application_of_psychological_principles_for_music_preferencettps://direct.mit.edu/books/monograph/1961/Sweet-AnticipationMusic-and-the-Psychology-of
+https://www.researchgate.net/publication/332966918_Theory_data_and_application_of_psychological_principles_for_music_preferencettps://direct.mit.edu/books/monograph/1961/Sweet-AnticipationMusic-and-the-Psychology-of
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4369290/
+[John Chalmers, Divisions of the Tetrachord] from => http://www.tonalsoft.com/enc/h/harmonic-complexity.aspx

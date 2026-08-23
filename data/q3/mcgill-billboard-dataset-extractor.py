@@ -132,7 +132,7 @@ for element in READ_DATASET:
     write_dataset.append({
         "title": element["title"],
         "artist": element["artist"],
-        "popularity": (100 - int(element["peak_rank"])) * int(element["weeks_on_chart"]),
+        "popularity": (100 - int(element["peak_rank"])) * (max_weeks_on_chart - int(element["weeks_on_chart"])),
         "use_of_chords": use_of_chord_prog_counter
         })
 
