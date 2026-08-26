@@ -15,6 +15,13 @@ import re
 with open(R"C:\Users\pijonka\Documents\PWS\data\q3\dataset-20thcent-mcgill-billboard\billboard-2.0-index.json") as f:
     READ_DATASET = json.load(f)
 
+# setup dataset property
+weeks_on_chart_vals = []
+for song in READ_DATASET:
+    weeks_on_chart_vals.append(song["weeks_on_chart"])
+
+max_weeks_on_chart = int(max(weeks_on_chart_vals))
+
 # new dataset to write to
 write_dataset = []
 
