@@ -162,3 +162,4 @@ The Arithmetic of Listening Tuning Theory and History for the Impractical Musici
 https://www.researchgate.net/publication/332966918_Theory_data_and_application_of_psychological_principles_for_music_preferencettps://direct.mit.edu/books/monograph/1961/Sweet-AnticipationMusic-and-the-Psychology-of
 https://pmc.ncbi.nlm.nih.gov/articles/PMC4369290/
 [John Chalmers, Divisions of the Tetrachord] from => http://www.tonalsoft.com/enc/h/harmonic-complexity.aspx
+Hooktheory voor popularity of chord progressions
