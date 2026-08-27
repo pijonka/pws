@@ -67,22 +67,12 @@ def parse_lab_chords(song_chords: str):
     chord_list = [line.strip().split()[-1] for line in song_chords_per_line if line.strip()]
     return chord_list
 
-# for every element in dataset (iterate, it's an array)
-for element in READ_DATASET:
+# analyzes chords of a given "song chords list", where each element is a chord, e.g. ["C:maj", "G:maj"], for use of chord progressions given in a dictionary of the format {"c_maj": ["C:maj", "G:Maj"]}. Returns use of second argument's chord progressions in first argument
+def analyze_chords(song_chords_list: list, chord_progs_to_find: dict[str, list[str]]):
     use_of_chord_prog_counter = 0
-
-    #   open the majmin.lab file corresponding to the id of this element
-    try:
-        with open(rf"C:\Users\pijonka\Documents\PWS\data\q3\dataset-20thcent-mcgill-billboard\LAB-McGill-Billboard\{element["id"].zfill(4)}\majmin.lab") as f:
-            unmod_song_chords = f.read()
-    except:
-        continue
-
-    # clean chords list
-    song_chords_list = parse_lab_chords(unmod_song_chords)
     
     #   for every key-value pair in FORMS_OF_CHORD_PROG literal:   
-    for key, list_of_chords_in_prog in FORMS_OF_CHORD_PROG.items():
+    for key, list_of_chords_in_prog in chord_progs_to_find.items():
         # index / position of iteration in song chord list
         song_chord_i = 0
 
@@ -134,6 +124,23 @@ for element in READ_DATASET:
             else: # if the current point is not the first chord of chord progression
                 # just keep iterating through it
                 song_chord_i += 1
+
+    return use_of_chord_prog_counter
+
+
+# for every element in dataset (iterate, it's an array)
+for element in READ_DATASET:
+    #   open the majmin.lab file corresponding to the id of this element
+    try:
+        with open(rf"C:\Users\pijonka\Documents\PWS\data\q3\dataset-20thcent-mcgill-billboard\LAB-McGill-Billboard\{element["id"].zfill(4)}\majmin.lab") as f:
+            unmod_song_chords = f.read()
+    except:
+        continue
+
+    # clean chords list
+    song_chords_list = parse_lab_chords(unmod_song_chords)
+
+    use_of_chord_prog_counter = analyze_chords(song_chords_list, FORMS_OF_CHORD_PROG)
 
     #   append to the dataset the use_of_chord_prog_counter
     write_dataset.append({
