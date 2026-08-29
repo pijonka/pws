@@ -1,5 +1,4 @@
 import json
-import re 
 import chord_analyzer
 # import the billboard dataset
 # the dataset should be formatted as such for the Python script to work:
@@ -43,24 +42,6 @@ FORMS_OF_CHORD_PROG = {
     "f_sharp_maj": ["F#:maj", "C#:maj", "B:maj", "B:min"],
     "c_sharp_maj": ["C#:maj", "G#:maj", "F#:maj", "F#:min"],
 }
-
-LIST_REMOVE_OUT_STRING = [
-    "0",
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "(",
-    ")",
-    "/"
-    ".",
-    " ",
-]
 
 # extracts strings of chord data out of majmin.lab files 
 def parse_lab_chords(song_chords: str):
