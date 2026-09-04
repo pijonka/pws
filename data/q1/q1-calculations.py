@@ -72,7 +72,7 @@ print("Ratio adjacent notes", ADJ_TRIAD_RATIO)
 for chord_prog_name, th_list in chords.items():
     # print(f"Average TH of {chord_name} = ", statistics.mean(th_list))
     ave_dissonance_chord = round(((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100), 2)
-    print(f"Average dissonance (5-limit ratio's) (normalized between bounds) of {chord_prog_name} = ", ave_dissonance_chord)
+    print(f"Normalized harmonic complexity of {chord_prog_name} = ", ave_dissonance_chord)
 
 for chord_prog_name, th_list in chords.items():
     normalized_th_list = []
@@ -81,5 +81,5 @@ for chord_prog_name, th_list in chords.items():
         el = round(el, 2)
         normalized_th_list.append(el)
 
-    print(f"Arc of dissonance of {chord_prog_name} = ", " - ".join(map(str, normalized_th_list)))
+    print(f"Arc of harmonic complexity of {chord_prog_name} = ", " - ".join(map(str, normalized_th_list)))
 
