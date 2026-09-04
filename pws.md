@@ -19,7 +19,7 @@
 -   Mag ik Maimonides op de enquete website hebben staan
 
 # Research question
-**What is the relation between the I - V - IV - iv chord progression, and (1) popularity (2) perceived enjoyment, among audiences exposed to American music?** 
+**To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?** 
 
 ## Sub-questions
 1.	How does the normalized harmonic complexity of the I - V - IV - iv chord progression compare to different chord progressions?
@@ -163,5 +163,3 @@ https://www.researchgate.net/publication/332966918_Theory_data_and_application_o
 https://pmc.ncbi.nlm.nih.gov/articles/PMC4369290/
 [John Chalmers, Divisions of the Tetrachord] from => http://www.tonalsoft.com/enc/h/harmonic-complexity.aspx
 Hooktheory voor popularity of chord progressions
-
-Wundt curve resource: https://anthonychmiel.com/wp-content/uploads/2025/08/Chmiel2017_BackToTheInvertedU.pdf
