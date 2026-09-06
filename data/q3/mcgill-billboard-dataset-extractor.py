@@ -1,5 +1,6 @@
 import json
 import chord_analyzer
+import chord_parsers
 # import the billboard dataset
 # the dataset should be formatted as such for the Python script to work:
 # (in the same order as the directories in billboard [
@@ -14,13 +15,6 @@ import chord_analyzer
 # dataset to read
 with open(R"C:\Users\pijonka\Documents\PWS\data\q3\dataset-20thcent-mcgill-billboard\billboard-2.0-index.json") as f:
     READ_DATASET = json.load(f)
-
-# setup dataset property
-weeks_on_chart_vals = []
-for song in READ_DATASET:
-    weeks_on_chart_vals.append(song["weeks_on_chart"])
-
-max_weeks_on_chart = int(max(weeks_on_chart_vals))
 
 # new dataset to write to
 write_dataset = []
@@ -43,13 +37,6 @@ FORMS_OF_CHORD_PROG = {
     "c_sharp_maj": ["C#:maj", "G#:maj", "F#:maj", "F#:min"],
 }
 
-# extracts strings of chord data out of majmin.lab files 
-def parse_lab_chords(song_chords: str):
-    song_chords_per_line = song_chords.splitlines()
-    chord_list = [line.strip().split()[-1] for line in song_chords_per_line if line.strip()]
-    return chord_list
-
-
 
 # for every element in dataset (iterate, it's an array)
 for element in READ_DATASET:
@@ -61,7 +48,7 @@ for element in READ_DATASET:
         continue
 
     # clean chords list
-    song_chords_list = parse_lab_chords(unmod_song_chords)
+    song_chords_list = chord_parsers.parse_lab_chords(unmod_song_chords)
 
     use_of_chord_prog_counter = chord_analyzer.count_chord_progs_ignore_reps(song_chords_list, FORMS_OF_CHORD_PROG)
 
