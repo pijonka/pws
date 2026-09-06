@@ -137,15 +137,23 @@ FORMS_OF_CHORD_PROGS = {
     },
 }
 
+global_chord_use_counter = dict.fromkeys(FORMS_OF_CHORD_PROGS, 0)
+
 for element in READ_DATASET:
-    #   open the majmin.lab file corresponding to the id of this element
-    try:
-        with open(rf"C:\Users\pijonka\Documents\PWS\data\q3\dataset-20thcent-mcgill-billboard\LAB-McGill-Billboard\{element["id"].zfill(4)}\majmin.lab") as f:
-            unmod_song_chords = f.read()
-    except:
-        continue
+    for roman_chord_obj_chord_prog, roman_chord_obj_val in FORMS_OF_CHORD_PROGS.items():
+        #   open the majmin.lab file corresponding to the id of this element
+        try:
+            with open(rf"C:\Users\pijonka\Documents\PWS\data\q3\dataset-20thcent-mcgill-billboard\LAB-McGill-Billboard\{element["id"].zfill(4)}\majmin.lab") as f:
+                unmod_song_chords = f.read()
+        except:
+            continue
 
-    # clean chords list
-    song_chords_list = chord_parsers.parse_lab_chords(unmod_song_chords)
+        # clean chords list
+        song_chords_list = chord_parsers.parse_lab_chords(unmod_song_chords)
 
-    use_of_chord_prog_counter = chord_analyzer.count_chord_progs_ignore_reps(song_chords_list, )
+        use_of_chord_prog_counter = chord_analyzer.count_chord_progs_ignore_reps(song_chords_list, roman_chord_obj_val)
+
+        global_chord_use_counter[roman_chord_obj_chord_prog] += use_of_chord_prog_counter
+        
+
+print(global_chord_use_counter)
