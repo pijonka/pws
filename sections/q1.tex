@@ -1,7 +1,7 @@
 \section{\qI}
 
 \subsection{Introduction}
-This subquestion obtained a mathematically backed explanation of popularity in the I - V - IV - iv chord progression, by calculating the normalized harmonic complexity of it compared to other chord progressions.
+This subquestion investigates the mathematical structure of the I - V - IV - iv chord progression, by calculating the normalized harmonic complexity of it compared to other chord progressions. This then allows the progression's harmonic complexity to be compared to existing research on the relationship between harmonic complexity and perceived enjoyment.
 
 \subsection{Results}
 The following is the standard output of my Python script, which performs the calculations for the research paper:
@@ -32,8 +32,14 @@ The following is the standard output of my Python script, which performs the cal
     Arc of harmonic complexity of (popular prog) vi_V_IV_V =  71.14 - 35.57 - 35.57 - 35.57
 \end{lstlisting}
 
+% The following are the matplotlib oiutputs:
 % standard dev of harmonic complexity of popular progressions
 % spectrum of harmonic complexity of chord progressions
 
 \subsection{Analysis}
-The calculations yield that the I - V - IV - iv chord progression has a normalized harmonic complexity of ~44.46\%, which is similar to the other popular chord progressions. 
+The calculations yield that the I - V - IV - iv chord progression has a normalized harmonic complexity of ~44.46\%, which is similar to [popular chord progressions](why not just "commonly used chord progressions"?). A chord progression with solely major chords — like I - V - IV - IV — is closer to this 45\% spot of normalized harmonic complexity than a chord progression with solely minor chords — like i - v - iv - iv. [No reliable external data could be found on the (un)popularity of all chord progressions in the list, only that the progressions labeled "(popular prog)" are commonly used chord progressions in music; therefore, (un)popularity of each chord progressions will not be compared.]
+
+External research suggests that perceived enjoyment of music in terms of harmonic complexity (y = perceived enjoyment and x = amount of harmonic complexity) has an inverted U shape, also known as the Wundt Curve \ref{Wundt Curve resource}. The peak of this curve would supposedly be reached at ~50\% of harmonic complexity, where 0\% is very low complexity, and 100\% is extreme complexity.
+
+\subsection{Conclusion}
+Given that the peak of perceived enjoyment should be at ~50\% harmonic complexity, and that the I - V - IV - iv chord progression lies at ~45\% harmonic complexity, we can infer that the I - V - IV - iv chord progression sits in a "sweet spot" of normalized harmonic complexity. [This is similar to other popular chord progressions which have the same amount of major/minor chords, but distinct from chord progressions ranging in the amount of major/minor chords.]
