@@ -3,6 +3,7 @@
 # Khan Academy SAT math: ratios (maybe not really a source ig)
 import math
 import statistics
+import matplotlib.pyplot as plt
 
 # calculates the sum of tenny height of a list of frequency ratios in tuple form
 def tenny_height(ratios):
@@ -74,12 +75,49 @@ for chord_prog_name, th_list in chords.items():
     ave_dissonance_chord = round(((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100), 2)
     print(f"Normalized harmonic complexity of {chord_prog_name} = ", ave_dissonance_chord)
 
+normalized_chords = {}
 for chord_prog_name, th_list in chords.items():
     normalized_th_list = []
     for el in th_list:
         el = (el - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH) * 100
         el = round(el, 2)
         normalized_th_list.append(el)
+    normalized_chords[chord_prog_name] = normalized_th_list
 
     print(f"Arc of harmonic complexity of {chord_prog_name} = ", " - ".join(map(str, normalized_th_list)))
 
+
+# graphs
+# ==============================================================================
+# GRAPHS
+# ==============================================================================
+
+# Filter out reference anchors (octave/adj) for popular progressions analysis
+popular_progs = {k: v for k, v in normalized_chords.items() if "(popular prog)" in k}
+
+plt.figure(figsize=(12, 6))
+
+all_names = list(normalized_chords.keys())
+means = [statistics.mean(v) for v in normalized_chords.values()]
+mins = [min(v) for v in normalized_chords.values()]
+maxs = [max(v) for v in normalized_chords.values()]
+
+y_positions = range(len(all_names))
+
+# Plot range of complexity per progression (Min to Max)
+for y, mi, ma in zip(y_positions, mins, maxs):
+    plt.plot([mi, ma], [y, y])
+
+# Plot average complexity markers
+plt.scatter(means, y_positions)
+
+plt.yticks(y_positions, all_names)
+plt.xlabel('Normalized Harmonic Complexity (0 = Octave, 100 = Adjacent)')
+plt.ylabel('Chord Progression')
+plt.title('Spectrum of Harmonic Complexity Across Chord Progressions')
+plt.grid(axis='x', linestyle='--', alpha=0.7)
+plt.xlim(-5, 105)
+plt.legend(loc='lower right')
+
+plt.tight_layout()
+plt.show()
