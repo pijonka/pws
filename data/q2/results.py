@@ -25,7 +25,12 @@ frags_results = {
     "frag:J": dataset["frag:J"]
 }
 
+for frag_name, frag_res in frags_results.items():
+    print(f"mean of ", frag_name, statistics.mean(frag_res))
+
+
 # for every fragment results list:
+'''
 for frag_result_name, frag_result in frags_results.items():
     # -- AI GENERATED GRAPH --
     mean = statistics.mean(frag_result)
@@ -55,3 +60,4 @@ for frag_result_name, frag_result in frags_results.items():
     plt.tight_layout()
     frag_result_file_name = frag_result_name.replace(":", "_")
     plt.savefig(f"./results_graphs/{frag_result_file_name}.pdf")
+'''
