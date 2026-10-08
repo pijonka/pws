@@ -1,20 +1,13 @@
-# Main question: To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?
+# PWS research project: "To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?"
 
-This research aims to be a case study for a bigger question: does music have an objective factor of enjoyment for society? It does so by researching this small chord progression in 
+## Overview
 
-1.	**How does the normalized harmonic complexity of the I - V - IV - iv chord progression compare to different chord progressions?**
-2.  **To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared upon initial, isolated observation?**
-3.  **What is the relation between the popularity of a song and the use of a I - V - IV - iv chord progression?**
+## Subquestion 1: How does the average normalized harmonic complexity of the I - V - IV - iv chord progression compare to different chord progressions?
 
-## Q1: The Math
-The **normalized harmonic complexity* — a scale of "0-100% complexity" — of a variety of chord progressions was calculated using Just Intonation frequency ratios and the *Tenney Height* function, then compared against each other.
+### Methodology
+To start, *normalized harmonic complexity* was defined as a scale of 0-100% harmonic complexity, where 0% is a double octave, and 100% is a triad of adjacent notes. Pure harmonic complexity was measured through Just Intonation ratios and the Tenney Height function, and those values were used to define those 0% and 100% bounds.
 
-<details>
-<summary><b>Justification:</b></summary>
+The average normalized harmonic complexity was calculated by creating an array for each chord progression with each value being the harmonic complexity of either a major or minor chord, calculating the mean of that array, and normalizing that amount of harmonic complexity.
 
-</details>
-
-**Result**: the I-V-IV-iv chord progression had a normalized harmonic complexity of ~45%, similar to other popular chord progressions. 
-
-## Q2: The Survey
-A survey from 
+### Results
+The normalized harmonic complexity of the I - V - IV - iv chord progression turned out to be ~45%, while chord progressions with more/less minor chords deviated from this spot, revealing an interesting middle position for the chord progression.
