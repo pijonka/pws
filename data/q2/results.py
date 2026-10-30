@@ -28,36 +28,3 @@ frags_results = {
 for frag_name, frag_res in frags_results.items():
     print(f"mean of ", frag_name, statistics.mean(frag_res))
 
-
-# for every fragment results list:
-'''
-for frag_result_name, frag_result in frags_results.items():
-    # -- AI GENERATED GRAPH --
-    mean = statistics.mean(frag_result)
-    stdev = statistics.stdev(frag_result)
-    print(mean)
-    print(stdev)
-
-    plt.figure(figsize=(5, 3))
-
-    plt.boxplot(
-        frag_result,
-        vert=False,
-        widths=0.2,
-        patch_artist=True,
-        boxprops=dict(facecolor="lightblue", color="darkblue"),
-        medianprops=dict(color="crimson", linewidth=2),
-        whiskerprops=dict(color="darkblue"),
-        capprops=dict(color="darkblue"),
-    )
-
-    plt.xlim(1, 5)
-    plt.yticks([1], [f"Fragment {frag_result_name}"])
-    plt.xlabel("Value")
-    plt.title("Distribution of frag_result")
-    plt.grid(axis="x", linestyle="--", alpha=0.7)
-
-    plt.tight_layout()
-    frag_result_file_name = frag_result_name.replace(":", "_")
-    plt.savefig(f"./results_graphs/{frag_result_file_name}.pdf")
-'''

@@ -70,10 +70,12 @@ print("Ratio octave", OCTAVE_TRIAD_RATIO)
 print("Ratio adjacent notes", ADJ_TRIAD_RATIO)
 
 # huh. Why is the mean of th_list measured instead of normalizing the Tenney Height of major, minor, etc BEFORE plugging it into the equation...?
+normalized_harmonic_complexity_chords = {}
 for chord_prog_name, th_list in chords.items():
     # print(f"Average TH of {chord_name} = ", statistics.mean(th_list))
     ave_dissonance_chord = round(((statistics.mean(th_list) - OCTAVE_TH) / (ADJ_TH - OCTAVE_TH)* 100), 2)
     print(f"Normalized harmonic complexity of {chord_prog_name} = ", ave_dissonance_chord)
+    normalized_harmonic_complexity_chords[chord_prog_name] = ave_dissonance_chord
 
 normalized_chords = {}
 for chord_prog_name, th_list in chords.items():
