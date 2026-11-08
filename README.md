@@ -1,5 +1,7 @@
 # PWS research project: "To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared within audiences exposed to American music?"
 
+(Note: the research paper is still a work in progress, and files in this repository may be incomplete (e.g. working notes or unfinished .tex files). If you are a **college admissions officer** or anyone else interested in learning more about this research project, I suggest checking out this README, which contains a comprehensive and accurate description of all the research conducted so far.)
+
 ## Overview 
 This research project aims to be a case study for a bigger question I've been wondering about all my life: **is music objective to some extent?** To produce an accurate result while realistically considering the resources of the project, it deliberately limits its scope to one chord progression (I - V - IV - iv) and one audience (those exposed to American music).
 
