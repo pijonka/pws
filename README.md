@@ -38,4 +38,7 @@ Popularity data was found using a simple formula using the variables "peak_rank"
 The Python modules were put together in one script to iterate and extract data from the McGill Billboard Corpus dataset. The analyzer module was instructed to find variations of the I - V - IV - iv chord progression.
 
 ### Results
-Unfortunately, the McGill dataset did not contain enough uses of the I - V - IV - iv chord progression to signify any relation between popularity and the chord.
+The McGill dataset did not contain enough uses of the I - V - IV - iv chord progression to signify any relation between popularity and the chord. 
+
+### Discussion
+I'm planning to use the same Python modules in an analysis of a bigger dataset (scraping [Hooktheory.com](https://www.hooktheory.com/) is an interesting option), though this will most likely be done separately from this current school project.
