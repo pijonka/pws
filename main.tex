@@ -11,12 +11,19 @@ breaklines=true
 }
 \usepackage{biblatex}
 \usepackage{units}
+\usepackage{xcolor}
+\usepackage{float}
+\definecolor{codegray}{rgb}{209,209,209}
 
-\newcommand{\qMain}{To what extent is the relationship between normalized harmonic complexity and perceived enjoyment of the I - V - IV - iv chord progression in line with the Wundt Curve?}
+\lstset{
+    backgroundcolor=\color{codegray},
+}
+
+\newcommand{\qMain}{What is the relationship between normalized harmonic complexity and perceived enjoyment of the I - V - IV - iv chord progression?}
 
 \newcommand{\qI}{How does the average normalized harmonic complexity of the I - V - IV - iv chord progression compare to different chord progressions?}
 
-\newcommand{\qII}{To what extent is perceived enjoyment of the I - V - IV - iv chord progression shared upon initial, isolated observation?}
+\newcommand{\qII}{How does the perceived enjoyment of the I - V - IV - iv chord progression compare to different chord progressions within audiences exposed to American music?} 
 
 \newcommand{\rChord}{I - V - IV -iv}
 
@@ -35,3 +42,5 @@ breaklines=true
     \newpage
     \input{sections/q2.tex}
 \end{document}
+
+% constant color for all graphs: rgb(209, 209, 209); HEX: #d1d1d1

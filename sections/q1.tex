@@ -1,45 +1,33 @@
 \section{\qI}
 
 \subsection{Introduction}
-This subquestion investigates the mathematical structure of the I - V - IV - iv chord progression, by calculating the normalized harmonic complexity of it and other chord progressions, and comparing the results.
+This subquestion calculates the normalized harmonic complexity of chord progressions A through J, and compares chord progression C to the other chord progressions.
 
 \subsection{Results}
-The following is the standard output of my Python script, which performs the calculations for the research paper [maybe no stdout but a table]:
+The following is the standard output of my Python script, which performs the calculations for the research paper:
 
-[SHOULD BE MADE INTO A TABLE WITH CHORD PROGRESSIONS LABELED A through J]
 \begin{lstlisting}
-    Ratio major (4, 5, 6)
-    Ratio minor (10, 12, 15)
-    Ratio octave (1, 2, 4)
-    Ratio adjacent notes (24, 25, 27)
-    Normalized harmonic complexity of octave =  0.0
-    Normalized harmonic complexity of I_V_IV_IV =  35.57
-    Normalized harmonic complexity of ! I_V_IV_iv =  44.46
-    Normalized harmonic complexity of I_V_iv_iv =  53.35
-    Normalized harmonic complexity of I_v_iv_iv =  62.25
-    Normalized harmonic complexity of i_v_iv_iv =  71.14
-    Normalized harmonic complexity of adj =  100.0
-    Normalized harmonic complexity of (popular prog) I_V_vi_IV =  44.46
-    Normalized harmonic complexity of (popular prog) I_V_vi_iii_IV =  49.8
-    Normalized harmonic complexity of (popular prog) vi_V_IV_V =  44.46
-    Arc of harmonic complexity of octave =  0.0
-    Arc of harmonic complexity of I_V_IV_IV =  35.57 - 35.57 - 35.57 - 35.57
-    Arc of harmonic complexity of ! I_V_IV_iv =  35.57 - 35.57 - 35.57 - 71.14
-    Arc of harmonic complexity of I_V_iv_iv =  35.57 - 35.57 - 71.14 - 71.14
-    Arc of harmonic complexity of I_v_iv_iv =  35.57 - 71.14 - 71.14 - 71.14
-    Arc of harmonic complexity of i_v_iv_iv =  71.14 - 71.14 - 71.14 - 71.14
-    Arc of harmonic complexity of adj =  100.0
-    Arc of harmonic complexity of (popular prog) I_V_vi_IV =  35.57 - 35.57 - 71.14 - 35.57
-    Arc of harmonic complexity of (popular prog) I_V_vi_iii_IV =  35.57 - 35.57 - 71.14 - 71.14 - 35.57
-    Arc of harmonic complexity of (popular prog) vi_V_IV_V =  71.14 - 35.57 - 35.57 - 35.57
+Normalized harmonic complexity of A (octave) =  0.0
+Normalized harmonic complexity of B (I_V_IV_IV) =  35.57
+Normalized harmonic complexity of C (I_V_IV_iv) =  44.46
+Normalized harmonic complexity of D (I_V_iv_iv) =  53.35
+Normalized harmonic complexity of E (I_v_iv_iv) =  62.25
+Normalized harmonic complexity of F (i_v_iv_iv) =  71.14
+Normalized harmonic complexity of G (adj) =  100.0
+Normalized harmonic complexity of H (I_V_vi_IV) =  44.46
+Normalized harmonic complexity of I (I_V_vi_iii_IV) =  49.8
+Normalized harmonic complexity of J (vi_V_IV_V) =  44.46   
 \end{lstlisting}
 
-% The following are the matplotlib oiutputs:
-% standard dev of harmonic complexity of popular progressions
+These values were entered in an Excel sheet to create the following graph (figure 1):
 
-% spectrum of harmonic complexity of chord progressions
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{figures/q1/normalized_harmonic_complexity.png}
+    \caption{Each dot resembles a chord progression. Its x-coordinate is equal to its harmonic complexity}
+\end{figure}
+
 
 \subsection{Analysis \& Conclusion}
-The calculations yield that chord progession C (I - V - IV - iv) has a normalized harmonic complexity of $\sim 44.46\% $, similar to chord progressions D and H through J.
+The calculations yield that chord progession C (I - V - IV - iv) has a normalized harmonic complexity of $44.46\% $, similar to chord progressions D and H through J.
 
 We can also see that chord progressions B through F follow a linear increase in harmonic complexity, and that chord progression D is closest to a middle position (53\%).
