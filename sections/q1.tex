@@ -1,10 +1,10 @@
 \section{\qI}
 
 \subsection{Introduction}
-This subquestion calculates the normalized harmonic complexity of chord progressions A through J, and compares chord progression C to the other chord progressions.
+This subquestion is answered by calculating the normalized harmonic complexity of chord progressions A through J, then comparing chord progression C to the other chord progressions.
 
 \subsection{Results}
-The following is the standard output of my Python script, which performs the calculations for the research paper:
+The following is the standard output of \lstinline[]|data/q1/results.py|:
 
 \begin{lstlisting}
 Normalized harmonic complexity of A (octave) =  0.0
@@ -23,11 +23,11 @@ These values were entered in an Excel sheet to create the following graph (figur
 
 \begin{figure}[H]
     \includegraphics[width=\textwidth]{figures/q1/normalized_harmonic_complexity.png}
-    \caption{Each dot resembles a chord progression. Its x-coordinate is equal to its harmonic complexity}
+    \caption{Each dot resembles a chord progression. Its x-coordinate is equal to its harmonic complexity.}
 \end{figure}
 
 
 \subsection{Analysis \& Conclusion}
 The calculations yield that chord progession C (I - V - IV - iv) has a normalized harmonic complexity of $44.46\% $, similar to chord progressions D and H through J.
 
-We can also see that chord progressions B through F follow a linear increase in harmonic complexity, and that chord progression D is closest to a middle position (53\%).
+We can also see that chord progressions A through F progressively increase in harmonic complexity, and that chord progression D is closest to a middle position (53\%) on a scale of 1 - 100\%. 
