@@ -1,3 +1,6 @@
+# DEFINED CONVENTIONS FOR WRITING
+-   File names in lstinline environment
+
 # DEFINITIVE chords te onderzoeken list
 -   A octave
 -   B I - V - IV - IV
