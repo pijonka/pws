@@ -5,9 +5,9 @@
 ## Overview 
 This research project aims to be a case study for a bigger question I've been wondering about all my life: **is music objective to some extent?** To produce an accurate result while realistically considering the resources of the project, it deliberately limits its scope to one chord progression (I - V - IV - iv) and one audience (those exposed to American music).
 
-To find that extent of objectivity in the chord progression, I built on external findings about **harmonic complexity** and the **Wundt Curve**. These suggest that perceived enjoyment in terms of complexity has an inverted U shaped relation, and that the vertex of this curve lies at a moderate amount of complexity. Using **Python scripts for calculations and data collection** (including an automated analysis of **~800 songs**); and, **surveys for more data collection**, I produced results that are not only in line with external findings so far, but also map the harmonic complexity of chord progressions in such a way that we can see where they lie on this curve. 
+To find that extent of objectivity in the chord progression, I built on external findings about **harmonic complexity** and the **Wundt Curve**. These suggest that perceived enjoyment in terms of complexity has an inverted U shaped relation, and that the vertex of this curve lies at a moderate amount of complexity. Using **Python scripts for calculations and data collection** and **surveys for more data collection**, I produced results that are not only in line with external findings so far, but also map chord progressions in such a way that we can see where they lie on a graph. 
 
-The research is currently **still in progress**. However, the following has already been found: the data on normalized harmonic complexity in terms of perceived enjoyment can be expressed as a quadratic function with a maximum where normalized harmonic complexity is 43.9%.
+The research is currently **still in progress**. However, the following has already been found: normalized harmonic complexity in terms of perceived enjoyment could be expressed as a quadratic function with a maximum where normalized harmonic complexity is 43.9%.
 
 ## Subquestion 1: "How does the average normalized harmonic complexity of the I - V - IV - iv chord progression compare to different chord progressions?"
 
