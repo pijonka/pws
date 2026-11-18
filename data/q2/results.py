@@ -27,4 +27,3 @@ frags_results = {
 
 for frag_name, frag_res in frags_results.items():
     print(f"mean of ", frag_name, statistics.mean(frag_res))
-

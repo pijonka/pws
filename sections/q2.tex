@@ -1,31 +1,31 @@
 \section{\qII}
 
 \subsection{Introduction}
-This subquestion can be answered by investigating empirical data of perceived enjoyment of a variety of chord progressions. The empirical data can be used then deciding the extent of perceived enjoyment upon initial, isolated observation.
+This subquestion is answered by investigating empirical data of perceived enjoyment throughout a variety of chord progressions. 
 
 \subsection{Results}
 % RESULTS ANALYZED FROM 18/09/2026
+The following is the standard output of \lstinline[]|data/q2/results.py|:
 
-\subsection{Analysis (discrete)}
-The boxplots show that fragments C and J share the highest distribution of ratings overall. Fragment J has a higher average of approximately $4$, while fragment C has a lower average of approximately $3$.
+\begin{lstlisting}
+    mean of  frag:A 2.25
+    mean of  frag:B 2.9444444444444446
+    mean of  frag:C 3.2777777777777777
+    mean of  frag:D 2.8055555555555554
+    mean of  frag:E 2.8055555555555554
+    mean of  frag:F 2.861111111111111
+    mean of  frag:G 1.1944444444444444
+    mean of  frag:H 3.0833333333333335
+    mean of  frag:I 2.9444444444444446
+    mean of  frag:J 3.388888888888889
+\end{lstlisting}
 
-Fragment C shares the same mean with fragments B, D, E, F, H, and I.
+These values were entered in an Excel sheet to create the following graph:
 
-\subsection{Analysis (continuous)}
-The results yield an inverted-U shaped relation of the perceived enjoyment as harmonic complexity increases, with only one fragment deviating significantly. 
+\begin{figure}[H]
+    \includegraphics[width=\textwidth, height=\textheight]{figures/q2/perceived_enjoyment.png}
+    \caption{Each dot resembles a chord progression. Its y-coordinate is equal to its mean perceived enjoyment.}
+\end{figure}
 
-For fragments A to C, the average rated enjoyment increases, and fragment C reaches the highest distribution of ratings. However, the following fragment D has a more centered distribution than C, signifying the start of a decline. While the following fragment E has a lower distribution of ratings, fragment F moves back to a centered distribution of 3. Then, fragment G has the lowest distribution of ratings, with almost all values being 1.
-
-Fragments H to J, having a similar harmonic complexity to fragment C, also have a similar average perceived enjoyment. The mean of fragments H and I are equal to that of fragment C, though their distributions are lower; fragment J has a higher mean, but equal distribution to that of fragment C.
-
-\subsection{Conclusion (discrete)}
-% The discrete conclusion draws a conclusion from results analyzed in this subquestion.
-
-Given that the I - V - IV - iv chord progression has the highest distribution of ratings overall, we can infer that the I - V - IV - iv has a moderately high shared perceived enjoyment upon initial listen. 
-
-It is not uniquely higher than all other chord progressions, though; the I - vi - IV - V chord progression has not only a congruent distribution of ratings, but a higher mean, from which we can infer an even higher shared perceived enjoyment. Also, many other chord progression had an approximately congruent mean as the I - V - IV - iv chord progression, despite its higher distribution.
-
-\subsection{Conclusion (continuous)}
-% The continuous conclusion draws a conclusion using data from subquestion 1 as well as this subquestion.
-
-Given that there is an inverted U-shaped relation between the harmonic complexity of chord progressions and the perceived enjoyment, with I - V - IV - iv having the overall highest distribution and mean of perceived enjoyment, we can infer that the I - V - IV - iv sits at the vertex of this shape. In subquestion 1, we established that perceived enjoyment in terms of harmonic complexity has an inverted U-shape known as the Wundt Curve. These results not only strengthen that conclusion, but also suggest that the I - V - IV - iv has a value of harmonic complexity at the vertex 
+\subsection{Analysis \& conclusion}
+The results yield the following pattern: fragments A through C increase in perceived enjoyment (from $2.25$ to $3.28$); fragment D decreases (to $2.81$); fragments D through F stagnate almost completely (fragments D and E are both congruent at $2.81$; fragment F increases negligibly with $0.05$); fragments G plummets (to $1.19$); and, fragments H through J are in a range (between $2.94$ and $3.39$) that fragment C also fits into.
