@@ -333,3 +333,4 @@ TSWLatexianTemp*
 *.pyc
 
 /build
+/data

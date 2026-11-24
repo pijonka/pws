@@ -2,6 +2,8 @@
 
 (Note: the research paper is still a work in progress, and files in this repository may be incomplete (e.g. working notes or unfinished .tex files). If you are a **college admissions officer** or anyone else interested in learning more about this research project, I suggest checking out this README, which contains a comprehensive and accurate description of all the research conducted so far.)
 
+(Technical note (not for college admissions officers (unless they're really smart)): survey response data was scrubbed from repo history to protect respondent privacy, but unfortunately caused this public repo to have slightly broken version history. Commits after b611009 were made after the purge and are safe to revert to.)
+
 ## Overview 
 This research project aims to be a case study for a bigger question I've been wondering about all my life: **is music objective to some extent?** To produce an accurate result while realistically considering the resources of the project, it deliberately limits its scope to one chord progression (I - V - IV - iv) and one audience (those exposed to American music).
 
@@ -33,7 +35,7 @@ The results revealed that the I - V - IV - iv chord progression sits at a high v
 ### Methodology
 The McGill Billboard Corpus dataset was used for both chord and popularity data.
 
-Two Python modules were created for the parsing and analyzing of chord data. The parser parsed unstructured strings into lists of chords. The analyzer analyzed a list of chord data, such that uses of a chord progression (including those with repetitions of one chord) would be counted. (These modules are currently available to view/download in the data/q3 directory, but will soon be polished and posted as submodules for other projects.)
+Two Python modules were created for the parsing and analyzing of chord data. The parser parsed unstructured strings into lists of chords. The analyzer analyzed a list of chord data, such that uses of a chord progression (including those with repetitions of one chord) would be counted.
 
 Popularity data was found using a simple formula using the variables "peak_rank" and "weeks_on_chart" from the dataset.
 
