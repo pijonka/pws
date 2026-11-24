@@ -3,15 +3,19 @@
 The methodology of this research paper varies greatly by subquestion, and should thus be split into three subsections.
 
 \subsection{Subquestion 1: \qI}
-To limit the scope of this research paper, harmonic complexity is calculated without introducing the nuance of keys. To do so, 5-limit just intonation frequency ratios were used. [why the hell did I use 5-limit again]
+To limit the scope of this research paper, harmonic complexity is calculated without introducing the nuance of keys. Offering rational frequency ratios that are congruent among different keys and compatible with Tenney Height, 5-limit just intonation frequency ratios were used [why the hell did I use 5-limit again]. 
 
-Interval ratios were obtained from the appendix of \textcite{arithmetic_of_listening}. An important decision was whether to use 
+Interval ratios were obtained from the appendix of \textcite{arithmetic_of_listening} [mention major/minor half step?]. They were then converted to three term triad ratios through a simple Python function [(note: this Python function is essentially redundant, because these triad ratios do not necessarily calculate anything that isn't externally known. A later refactor of the \lstinline[]|results.py| function could hardcode these values.)], so that each triad's harmonic complexity could be calculated through Tenney Height. 
 
-and then converted to three term chord ratios through a simple Python function [(note: this Python function is essentially redundant, because these chord ratios do not necessarily calculate anything that isn't externally known. A later refactor of the \lstinline[]|results.py| function could hardcode these values if optimization is necessary.)]. 
+The Tenney Height function is used to calculate harmonic complexity, because it is widely recognized to [ja wat eigenlijk]
 
-The just intonation frequency ratios 
+The harmonic complexity of each chord in a chord progression is made into a Python list. The mean of this list is taken to receive a mean harmonic complexity of this chord progression. This is done to get a single numeric value corresponding to each researched chord progression's harmonic complexity.
 
-\underline{Normalized} harmonic complexity demands that the aforementioned harmonic complexity be normalized to a scale of 0-100\%. In this research paper's calculations, the minimum value, being 0\% harmonic complexity, is 
+\underline{Normalized} harmonic complexity demands that the aforementioned harmonic complexity be normalized to a scale of 0-100\%. There is no universally defined minimum or maximum harmonic complexity. In this research paper's calculations, the minimum value, being 0\% harmonic complexity, is set to the ratio of a double octave (e.g. the ratio of C3 \: C4 \: C5). This ratio is chosen because it yields a Tenney Height result of $\log_{2}(2 * 1) = 1$, and the only reduced interval ratio that yields a lower value is the unison ($1 : 1$), which, making no real comparison with another note, is disregarded [dus eigenlijk moet het gewoon 1\% harmonic complexity zjin. FUck.]. The maximum value, 100\% harmonic complexity, is set to the ratio of three adjacent notes (e.g. the ratio of C3 \: C\#3 \: D3). This ratio is chosen because in the 12-note chromatic scale and the corresponding five-limit just intonation system, there is no three-term ratio with a larger harmonthree-term ratio with a larger harmonic complexity.
+
+The normalized harmonic complexity of the chord progression's mean harmonic complexity is taken. While it ostensibly seems to be an important decision whether to first apply normalized harmonic complexity on each chord, and then take that mean, or, take the mean first, and then apply normalized harmonic complexity, there is no benefit to choosing one method over the other [I think].
+
 
 \subsection{Subquestion 2 \qII}
+The target population of this subquestion is defined as ``audiences exposed to American music''. However, due to the limited resources of this research paper, the realized sample (34 people) consists primarily of Dutch 
 Audiences exposed to American music: a share of 10\%+ in the Spotify top 200.
